@@ -1,0 +1,449 @@
+
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro');
+
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+  
+  .movie-card {
+    position: relative;
+    box-sizing: border-box;
+    max-width: 450px;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    margin: 4vh 0 0 ;
+    border-radius: 5px;
+    box-shadow: 2px 3px 12px rgba(0, 0, 0, .4);
+    color: white;
+    padding: 15px 0.6%;
+  float: left;
+  margin-left: 15px;
+  margin-right: 15px;
+  
+  
+  }
+  .movie-card:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background: linear-gradient(to right, rgba(40,40,60,1) 0%,rgba(40,0,60,0) 90%);
+    background-blend-mode: multiply;
+    will-change: transform;
+    z-index: 0;
+  }
+
+  .movie-card .movie-h1 {
+    font-size: 170%;
+    position: relative;
+    z-index: 10;
+    font-family: Orbitron;
+    margin-bottom: 8px;
+    color: #ffffff;
+    float: left;
+    width: 100%;
+  
+  }
+  .run-time a{
+    top: -3.5px;
+    display: block;
+    border: 1px solid white;
+    border-radius: 7px;
+    position: relative;
+    z-index: 10;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    background: rgba(0, 0, 0, .3);
+    margin: 0;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    transition: all .2s;
+    font-family: Orbitron;
+    width: 50px;
+    font-size:10px ;
+
+  }
+  .run-time a:hover {
+    background: rgba(255, 255, 255, .8);
+    color: black;
+    box-shadow: 0 0 10px rgba(255,255,255,.5);
+    mix-blend-mode: screen;
+  }
+  .run-time a:active {
+    transform: translateY(2px);
+  }
+  .break{
+    margin:8px 0 5px;
+    height: 0.5px;
+    width:65%;
+    position: relative;
+  
+    background: white;
+    z-index: 1;
+    font-family:Orbitron;
+  }
+  .movie-card span {
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+    font-size: 12px;
+    color: #ffffff;
+    font-family:Orbitron;
+
+  }
+  .one-line{
+    display: flex;
+    width: 65%;
+    justify-content: space-between;
+  }
+  .watch-btn{
+    display: block;
+    border: 1px solid white;
+    border-radius: 4px;
+    position: relative;
+    z-index: 10;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    background: rgba(0, 0, 0, .3);
+    margin: 0;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    transition: all .2s;
+    font-family: Orbitron;
+    width: 130px;
+  
+  }
+ .watch-btn:hover {
+    background: rgba(255, 255, 255, .8);
+    color: black;
+    box-shadow: 0 0 10px rgba(255,255,255,.5);
+    mix-blend-mode: screen;
+  }
+  .watch-btn:active {
+    transform: translateY(2px);
+  }
+  .movie-card  p {
+      font-family: Orbitron;
+    position: relative;
+    z-index: 10;
+    font-size: 10px;
+    width: 65%;
+    height: 37%;
+  }
+  
+  @media (max-width: 768px) {
+  
+   
+    .movie-h1 {
+    font-size: 120%;
+    }
+    .movie-card  p {
+     
+      overflow: hidden;
+      width: 100%;
+      height: 22%;
+      font-size: 8.6px;
+    }
+   
+  }
+  @media (max-width: 500px) {
+    .one-line{
+        width: 80%;
+      }
+    .break{
+    
+        width:80%;
+       
+      }
+    .movie-card {
+      margin-left: 30px;
+      width: 100%;
+    }
+    .movie-card  p {
+     
+        overflow: hidden;
+        width: 100%;
+        height: 30%;
+        font-size: 9px;
+      }
+      .movie-card .movie-h1 {
+        font-size: 140%;
+       
+      
+      }
+      .movie-card span {
+   
+        font-size: 10px;
+     
+    
+      }
+  }
+  .row-movie {
+  
+  display: -ms-flexbox;
+  display: flex;
+  
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  align-items: center;
+  width: 100%;
+  
+  }
+  
+  
+  
+
+
+  @import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+  @import url(https://fonts.googleapis.com/css?family=Rubik:400,900);
+  
+  * {
+    box-sizing:border-box;
+  }
+  body {
+    height:100%;
+    min-height:100%;
+  }
+  body {
+  
+    font-family:'Lato', Sans-serif;
+  }
+  #card_container {
+    width:650px;
+    height:350px;
+      position: relative;
+      justify-content: space-between;
+    margin-left: 60px;
+    z-index: -1;
+    
+  }
+  #card {
+    animation:backAn 50s infinite;
+    color:#fff;
+    padding:30px;
+    height:100%;
+    position:relative;
+    z-index:-1;
+    /*background:url(http://riccardotartaglia.it/img/deadpool/back.jpg) 100% bottom;*/
+    /*box-shadow:0px 45px 100px rgba(0, 0, 0, 0.4), inset 0 0 0 1000px rgba(156, 27, 27, 0.6);*/
+    box-shadow:0px 4px 10px rgba(0, 0, 0, 0.4), inset 0 0 0 1000px rgba(0, 76, 86, 0.6);
+  }
+  #card .text-block {
+    position:relative;
+    z-index:-2;
+    text-shadow:0 3 10 rgba(0, 0, 0, 0.7);
+  }
+  #card .text-block h1 {
+    font-family: Orbitron;
+    font-size:3em;
+    margin:0;
+    text-transform:uppercase;
+    font-weight:700;
+    color: #ffffff;
+  }
+  #card .text-block h1 small {
+    font-size:.4em;
+    color:#ccc;
+    position:relative;
+    bottom:10px;
+    font-family: Orbitron;
+
+  }
+  #card .text-block h3 {
+    color: #ffffff;
+
+    margin:0;
+    font-weight:700;
+    z-index: -2;
+    font-family: Orbitron;
+    font-size: 18px;
+
+  }
+  #card .text-block p {
+    font-weight:300;
+    width:50%;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    font-family: Orbitron;
+    font-size: 15px;
+
+
+  }
+  #card .text-block .feature-btn {
+    transition:all 0.35s cubic-bezier(0.37, 0.26, 0.35, 1);
+    border:4px solid #fff;
+    padding:10px;
+    background:transparent;
+    font-family:'Rubik', Sans-serif;
+    text-transform:uppercase;
+    font-weight:700;
+    cursor:pointer;
+    position: relative;
+    font-family: Orbitron;
+
+    
+  }
+  #card .text-block .feature-btn2 {
+    transition:all 0.35s cubic-bezier(0.37, 0.26, 0.35, 1);
+    border:4px solid #fff;
+    padding:10px;
+    background:transparent;
+    font-family:'Rubik', Sans-serif;
+    text-transform:uppercase;
+    font-weight:700;
+    cursor:pointer;
+    font-family: Orbitron;
+
+  }
+  #card .text-block .feature-btn2:hover {
+    background:#B51D2A}
+  #card .text-block .feature-btn:hover {
+    background:#004c56;
+  }
+  #card_container .pg {
+    position:absolute;
+    height:450px;
+    width:40%;
+    right:-10px;
+    bottom:0;
+    z-index:2;
+  }
+  #card_container .pg > img{
+    height:450px;
+  }
+  #card_container .pg2 {
+    position:absolute;
+    height:430px;
+    width:45%;
+    right:-50px;
+    bottom:0;
+    z-index:2;
+  }
+  #card_container .pg2> img{
+    height:430px;
+  }
+  .shine {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:1;
+  }
+  #card .feature-btn {
+    color:#fff;
+  }
+  #card .feature-btn2 {
+    color:#fff;
+  }
+  @keyframes backAn {
+    0% {
+      background-size:100%;
+    }
+    50% {
+      background-size:250%;
+    }
+    100% {
+      background-size:100%;
+    }
+  }
+
+  .row-movie {
+  
+  display: -ms-flexbox;
+  display: flex;
+  
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-items: center;
+  justify-self: center;
+  align-items: center;
+  width: 95%;
+  justify-content: center;
+  
+  
+  }
+  
+  
+  @media (max-width: 746px) {
+    
+    body{
+      margin: 0;
+    }
+    #card .text-block h3 {
+      font-size:1.2em;
+  
+  }
+    #card .text-block h1 {
+    
+    font-size:2em;
+    
+  }
+  #card .text-block h1 small {
+    font-size:.4em;
+    
+  }
+  
+  #card .text-block p {
+    font-weight:400;
+    width:50%;
+    font-size: 12px;
+    margin-bottom: 20px;
+  
+  }
+  #card .text-block .feature-btn  {
+    
+    padding:5px;
+    font-size: 12px;
+    
+  }
+  #card .text-block .feature-btn2 {
+    
+    padding:5px;
+    font-size: 12px;
+  }
+    #card_container .pg {
+    height:280px;
+  right: 0;
+    width: 50%;
+    bottom: 0;
+  }
+  #card_container .pg > img{
+    height:280px;
+  }
+  #card_container .pg2 {
+    height:230px;
+    right: 0;
+    width: 50%;
+    bottom: 0;
+  }
+  #card_container .pg2> img{
+    height:230px;
+  
+  }
+  #card_container{
+    margin-top: 30px;
+    height: 350px;
+    margin-left: 0;
+    width:320px;
+  
+
+  }
+  #card {
+  
+    padding:10px;
+  
+    margin-left: 15px;
+  
+  }
+  
+  
+  }

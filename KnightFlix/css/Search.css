@@ -1,0 +1,379 @@
+
+.container-movie .movie_card {
+    box-shadow: 0 5px 20px 10px rgba(0, 0, 0, .2);
+    position: relative;
+    display: block;
+    width: 590px;
+    height: 270px;
+    margin: 20px auto;
+
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.4s;
+    box-shadow: 0px 0px 60px -25px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.container-movie .movie_card .info_section .video-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  
+ 
+  .container-movie .movie_card:hover .video-button {
+    z-index: 1202;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+.info_section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-blend-mode: multiply;
+    z-index: 2;
+    border-radius: 10px;
+}
+
+.movie_header {
+    position: relative;
+    padding: 15px;
+    height: 40%;
+    text-align: left;
+}
+
+.info_section img {
+
+
+    height: 150px;
+    width: 130px;
+    border-bottom-right-radius:11px;
+
+}
+
+.movie_header h1 {
+    margin: 0 0 10px;
+    color: var(--text-color);
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.movie_header h4 {
+    margin-bottom: -5px;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.movie_header p{
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.minutes {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--text-color);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--text-color);
+    margin-bottom: 7px;
+    font-size: 12px;
+}
+
+.desc-text {
+    color: var(--text-color);
+    margin-left: 2px;
+    font-size: 13px;
+}
+
+.locandina {
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    height: 120px;
+    box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.5);
+}
+
+.movie_desc {
+    margin-top: 55px;
+    margin-left: 20px;
+    height: 50%;
+    text-align: left;
+
+}
+
+.desc-text {
+    color: var(--text-color);
+}
+
+.movie_social {
+    height: 10%;
+    padding-left: 15px;
+    padding-bottom: 20px;
+}
+
+
+
+.movie_social:hover {
+    transition: color 0.3s;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+.blur_back img {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 130%;
+    right: 0;
+    background-size: cover;
+    border-radius: 11px;
+    background-position: -100% 10% !important;
+
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .movie_header {
+        width: 65%;
+    }
+
+    .movie_desc {
+        width: 50%;
+    }
+
+    .info_section {
+        background: linear-gradient(to right, var(--black-color) 100%, transparent 80%);
+    }
+
+    .blur_back img {
+        width: 100%;
+        background-position: -10% 10% !important;
+        object-fit: cover;
+        opacity: 0.68;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .movie_desc {
+        padding: 0 10px 25px 10px;
+        margin: 0;
+
+
+    }
+
+    .container-movie .movie_card {
+        width: 100%;
+        margin: 30px 20px 20px 20px;
+
+        height: auto;
+    }
+
+    .blur_back img {
+        width: 100%;
+        background-position: 50% 50% !important;
+    }
+
+    .movie_header {
+        width: 100%;
+        margin-top: 55px;
+    }
+
+    .movie_desc {
+        width: 100%;
+    }
+
+    .info_section {
+        background: linear-gradient(to top, var(--black-color) 50%, transparent 100%);
+        display: inline-grid;
+    }
+
+    .row-movie {
+
+        width: 90%;
+    }
+
+    .Serach-content .searchBox {
+
+        left: 10%;
+
+
+    }
+
+    .Serach-content .searchBox:hover>.searchInput {
+        width: 245px;
+    }
+
+
+}
+
+
+
+
+
+
+
+.row-movie {
+
+    display: -ms-flexbox;
+    display: flex;
+
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-items: center;
+    z-index: 1;
+
+    position: relative;
+}
+
+
+
+.container-movie {
+    
+    width: 100%;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-between;
+}
+
+@media (min-width:576px) {
+
+    .container-movie {
+        max-width: 540px
+    }
+}
+
+@media (min-width:768px) {
+
+    .container-movie {
+        max-width: 720px
+    }
+
+}
+
+@media (min-width:992px) {
+
+    .container-movie {
+        max-width: 960px
+    }
+}
+
+@media (min-width:1200px) {
+
+    .container-movie {
+        max-width: 1240px
+    }
+}
+
+
+
+
+.Serach-content {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-items: center;
+}
+
+.search-text {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+.searchBox {
+    position: absolute;
+
+    background: #2f3640;
+    height: 50px;
+    border-radius: 50px;
+    padding: 5px;
+    left: 40%;
+
+
+}
+
+.searchBox:hover>.searchInput {
+    width: 260px;
+    padding: 0 6px;
+}
+
+.searchBox:hover>.searchButton {
+    background: white;
+    color: #2f3640;
+}
+
+.searchButton {
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    border: none;
+}
+.searchButton i{
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.searchInput {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+
+}
+
+@media screen and (max-width: 620px) {
+    .searchBox:hover>.searchInput {
+        width: 150px;
+        padding: 0 6px;
+    }
+}

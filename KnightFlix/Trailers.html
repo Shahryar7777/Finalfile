@@ -1,0 +1,1219 @@
+<!doctype html>
+<html lang="zxx">
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/png" href="movieImg/kf-logo.png">
+
+
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/Search.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css\Cart.css">
+    <link rel="stylesheet" href="css\cartResponsive.css">
+    <link rel="stylesheet" href="cartAssets/css/bootstrap.min.css">
+    <!-- Owl Theme Default CSS -->
+    <link rel="stylesheet" href="cartAssets/css/owl.theme.default.min.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="cartAssets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="cartAssets/css/boxicons.min.css">
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="cartAssets/css/flaticon.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="cartAssets/css/style.css">
+    <link rel="stylesheet" href="css/trailer.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- ===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link
+        href="http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900%7CMontserrat:400,700%7COswald:300,400,700"
+        rel="stylesheet" type="text/css">
+    <title>KnightFlix - Movies Watching & Ticket Booking</title>
+</head>
+<body>
+     <!-- Start Preloader Area -->
+     <div class="loader-wrapper">
+        <div class="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!-- End Preloader Area -->
+ <!-- Navigation Bar Start -->
+ <nav class="navbar navbar-fixed-top navbar-bg-switch">
+
+   <div class="container">
+       <!-- Start Navbar Area -->
+       <div class="navbar-area">
+           <!-- Menu For Mobile Device -->
+           <div class="mobile-nav">
+           </div>
+           <!-- Menu For Desktop Device -->
+           <div class="main-navigation fadeIn-element main-nav">
+               <div class=" collapse navbar-collapse mean-menu">
+                   <ul class="nav navbar-nav navbar-right ">
+                       <li class="nav-item">
+                           <a href="Home-page.html" class="nav-link page-scroll link-underline-menu  ">
+                               Home
+                           </a>
+                       </li>
+                       <li class="nav-item">
+                           <a href="#" class="nav-link page-scroll link-underline-menu active ">Movies
+                           <i class="bx bx-chevron-down"></i>
+                       </a>
+                       <ul class="dropdown-menu">
+                           <li class="nav-item">
+                               <a href="movies-page.html" class="nav-link">Movies</a>
+                           </li>
+                          
+                           <li class="nav-item">
+                               <a href="Trailers.html" class="nav-link active">Trailers</a>
+                           </li>
+                       </ul>
+                       </li>
+                       <li class="nav-item" >
+                           <a href="genre.html" class="nav-link page-scroll link-underline-menu ">Genre</a>
+                       </li>
+                      
+                       <li class="nav-item" id="title">
+
+                                   <h1 class="title"><img src="movieImg/kf-logo-letter-initial-logo-designs-template-free-vector-removebg.png" class="img1"></h1>
+                                   <h1 class="title-light"><img src="movieImg/kf-logo.png" class="img1"></h1>
+
+                       </li>
+
+
+
+                       <li class="nav-item">
+                           <a href="#" class="nav-link page-scroll link-underline-menu">
+                               Shop
+                               <i class="bx bx-chevron-down"></i>
+                           </a>
+                           <ul class="dropdown-menu">
+                               <li class="nav-item">
+                                   <a href="shop-page.html" class="nav-link">Shop</a>
+                               </li>
+                               <li class="nav-item">
+                                   <a href="cart-page.html" class="nav-link">Cart</a>
+                               </li>
+                               <li class="nav-item">
+                                   <a href="checkout.html" class="nav-link">Checkout</a>
+                               </li>
+                               <li class="nav-item">
+                                   <a href="productDetail.html" class="nav-link">Product Details</a>
+                               </li>
+                               <li class="nav-item">
+                                   <a href="wishlist.html" class="nav-link">Wishlist</a>
+                               </li>
+                           </ul>
+                       </li>
+
+                       <li class="nav-item">
+                           <a href="about.html" class="nav-link page-scroll link-underline-menu">
+                               about
+                           </a>
+
+
+                       </li>
+                       <li class="nav-item">
+                           <a href="Contact-page.html" class="nav-link page-scroll link-underline-menu">
+                               contact
+                           </a>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+   </div>
+   <div class="wrapper">
+   </div> 
+<div class="close-btn">
+   <i class='bx bxs-x-square'></i>     </div> 
+<div class="search-btn">
+   <i class='bx bx-search icon'></i>
+</div>
+
+
+<div class="wrap">
+   <div class="search">
+      <input type="text" class="searchTerm" placeholder="What are you looking for?" onkeyup="search()" id="search-Bar">
+      <button type="submit" class="search-Button">
+       <i class='bx bx-search icon'></i>
+   </button>
+   </div>
+   <div class="container-movie row-movie " id="product-list">
+
+   </div>
+</div>
+<img src="movieImg/kf-logo-letter-initial-logo-designs-template-free-vector-removebg.png" id="mobile-img"></h1>
+<img src="movieImg/kf-logo.png" id="mobile-img-light"></h1>
+
+
+</nav>
+<!-- Navigation Bar End -->
+
+<!-- SideBar Html Start -->
+<nav class="sidebar close" id="nav1">
+   <i class='bx bx-x siderbarClose' id="toggle1"></i>
+   <header>
+       <div class="image-text">
+           <div class="image">
+               <img src="img/avatar-370-456322-512.webp" id="photo" class="toggle1">
+               <input type="file" id="file">
+               <label for="file" id="uploadBtn">Choose Photo</label>
+           </div>
+       </div>
+   </header>
+   <div class="text logo-text">
+       <span class="name" id="getName">sss</span>
+       <span class="profession" id="getEmail">ss</span>
+   </div>
+   <div class="menu-bar">
+       <div class="menu">
+           
+           <ul class="menu-links">
+               <li class="nav-link">
+                   <a href="Home-page.html">
+                       <i class='bx bx-home-alt icon'></i>
+                       <span class="text nav-text">Home</span>
+                   </a>
+               </li>
+               
+               <li class="nav-link">
+                   <a href="shop-page.html">
+                       <i class='bx bx-shopping-bag icon'></i> <span class="text nav-text">Shop</span>
+                   </a>
+               </li>
+               <li class="nav-link">
+                   <a href="cart-page.html">
+                       <i class='bx bx-cart icon'></i> 
+                       <span class="text nav-text">Cart</span></a>
+               </li>
+               <li class="">
+                   <a href="index.html">
+                       <i class='bx bx-log-out icon'></i>
+                       <span class="text nav-text">Logout</span>
+                   </a>
+               </li>
+               
+               <li class="mode">
+                   <div class="sun-moon">
+                       <i class='bx bx-moon icon moon'></i>
+                       <i class='bx bx-sun icon sun'></i>
+                   </div>
+                   <span class="mode-text text">Dark mode</span>
+
+                   <div class="toggle-switch">
+                       <span class="switch"></span>
+                   </div>
+               </li>
+           </ul>
+       </div>
+   </div>
+</nav>
+<!-- SideBar Html End -->
+    <!-- Start Page Title Area -->
+    <div class="page-title-area bg-6">
+        <div class="container">
+            <div class="page-title-content">
+                <h2>Trailer</h2>
+                <ul>
+                    <li>
+                        <a href="Home-page.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="active">Trailer</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End Page Title Area -->
+
+
+    <!-- Theater Area Start -->
+
+    <section class="filmoja-theater-area section_70">
+        <div class="container">
+           <div class="row">
+              <div class="col-md-5">
+                 <div class="theater-left">
+                    <div class="theater-box">
+                       <div class="theater-text">
+                          <h3>today in theater</h3>
+                          <h4>Action, Adventure, Fantasy</h4>
+                          <p>researved your seat,before you miss tomorrow.</p>
+                          <a href="#" class="filmoja-btn">discover all</a>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+              <div class="col-md-7">
+                 <div class="theater-slider slider-for">
+                    <div class="single-theater">
+                       <img src="images/background/theater.jpg" alt="theater thumb" />
+                       <a class="play-video" href="https://www.youtube.com/watch?v=1Q8fG0TtVAY">
+                       <i class="fa fa-play"></i>
+                       </a>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </section>
+     <!-- Theater Area End -->
+  
+      <!-- Tv Movies Area Start -->
+  <section class="filmoja-tv-movies-area section_70">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="filmoja-heading">
+                  <h2>New <span>Trailer</span></h2>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-12">
+               <div class="tv-panel-list">
+                 
+                    <section1>
+                    <ul>
+                       <li class="list active" data-filter="All">All</li>
+                       <li class="list" data-filter="lollywood">lollywood</li>
+                       <li class="list" data-filter="Hollywood">Hollywood</li>
+                       <li class="list" data-filter="Bollywood">Bollywood</li>
+                       <li class="list" data-filter="TvSeries">Tv Series</li>
+                   </ul>
+                    </section1>
+                    
+                    <div class="tab-content" id="pills-tabContent">
+                       <div class="tab-pane fade show active" id="pills-popular" role="tabpanel" aria-labelledby="pills-popular-tab">
+                          <div class="tab-movies">
+                             <div class="row">
+                                <div class="col-lg-3 col-sm-6">
+                                   <div class="itemBox lollywood">
+                                   <div class="single-top-movie">
+                                      <div class="top-movie-wrap">
+                                         <div class="top-movie-img">
+                                            <a href="#">
+                                            <img src="movieImg/lollywood/bhadur.jpg" />
+                                            </a>
+                                         </div>
+                                         <div class="thumb-hover">
+                                            <a class="play-video" href="https://www.youtube.com/watch?v=1Q8fG0TtVAY"><i class="fa fa-play"></i></a>
+                                            <div class="thumb-date">
+                                               <span>05:30</span>
+                                            </div>
+                                         </div>
+                                      </div>
+                                      
+                                   </div>
+                                </div>
+                                </div>
+                                
+                                <div class="col-lg-3 col-sm-6">
+                                   <div class="itemBox lollywood">
+                                   <div class="single-top-movie">
+                                      <div class="top-movie-wrap">
+                                         <div class="top-movie-img">
+                                            <a href="#">
+                                            <img src="movieImg/lollywood/jawani.jfif" alt="top movies" />
+                                            </a>
+                                         </div>
+                                         <div class="thumb-hover">
+                                            <a class="play-video" href="https://www.youtube.com/watch?v=1Q8fG0TtVAY"><i class="fa fa-play"></i></a>
+                                            <div class="thumb-date">
+                                               <span>05:30</span>
+                                            </div>
+                                         </div>
+                                      </div>
+                                      
+                                   </div>
+                                </div>
+                             </div>
+                                <div class="col-lg-3 col-sm-6">
+                                   <div class="itemBox lollywood">
+                                   <div class="single-top-movie">
+                                      <div class="top-movie-wrap">
+                                         <div class="top-movie-img">
+                                            <a href="#">
+                                            <img src="movieImg/lollywood/lahore.jfif" alt="top movies" />
+                                            </a>
+                                         </div>
+                                         <div class="thumb-hover">
+                                            <a class="play-video" href="https://www.youtube.com/watch?v=1Q8fG0TtVAY"><i class="fa fa-play"></i></a>
+                                            <div class="thumb-date">
+                                               <span>05:30</span>
+                                            </div>
+                                         </div>
+                                      </div>
+                                      
+                                   </div>
+                                   </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                   <div class="itemBox lollywood">
+                                   <div class="single-top-movie">
+                                      <div class="top-movie-wrap">
+                                         <div class="top-movie-img">
+                                            <a href="#">
+                                            <img src="movieImg/lollywood/london.jfif" alt="top movies" />
+                                            </a>
+                                         </div>
+                                         <div class="thumb-hover">
+                                            <a class="play-video" href="https://www.youtube.com/watch?v=1Q8fG0TtVAY"><i class="fa fa-play"></i></a>
+                                            <div class="thumb-date">
+                                               <span>05:30</span>
+                                            </div>
+                                         </div>
+                                      </div>
+                                </div>
+                                   </div>
+                                </div>
+                             </div>
+                             <!-- End Row -->
+                             <div class="row">
+                                <div class="col-lg-3 col-sm-6">
+                                   <div class="itemBox lollywood">
+                                   <div class="single-top-movie">
+                                      <div class="top-movie-wrap">
+                                         <div class="top-movie-img">
+                                            <a href="#">
+                                            <img src="movieImg/lollywood/teefa.jpg" alt="top movies" />
+                                            </a>
+                                         </div>
+                                         <div class="thumb-hover">
+                                            <a class="play-video" href="https://www.youtube.com/watch?v=1Q8fG0TtVAY"><i class="fa fa-play"></i></a>
+                                            <div class="thumb-date">
+                                               <span>05:30</span>
+                                            </div>
+                                         </div>
+                                      </div>
+                                      
+                                   </div>
+                                </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                   <div class="itemBox lollywood">
+                                   <div class="single-top-movie">
+                                      <div class="top-movie-wrap">
+                                         <div class="top-movie-img">
+                                            <a href="#">
+                                            <img src="movieImg/lollywood/quaid.jfif" alt="top movies" />
+                                            </a>
+                                         </div>
+                                         <div class="thumb-hover">
+                                            <a class="play-video" href="https://www.youtube.com/watch?v=1Q8fG0TtVAY"><i class="fa fa-play"></i></a>
+                                            <div class="thumb-date">
+                                               <span>05:30</span>
+                                            </div>
+                                         </div>
+                                      </div>
+                                      
+                                   </div>
+                                </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                   <div class="itemBox lollywood">
+                                   <div class="single-top-movie">
+                                      <div class="top-movie-wrap">
+                                         <div class="top-movie-img">
+                                            <a href="#">
+                                            <img src="movieImg/lollywood/superstar.png" alt="top movies" />
+                                            </a>
+                                         </div>
+                                         <div class="thumb-hover">
+                                            <a class="play-video" href="https://www.youtube.com/watch?v=1Q8fG0TtVAY"><i class="fa fa-play"></i></a>
+                                            <div class="thumb-date">
+                                               <span>05:30</span>
+                                            </div>
+                                         </div>
+                                      </div>
+                                      
+                                   </div>
+                                </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                   <div class="itemBox lollywood">
+                                   <div class="single-top-movie">
+                                      <div class="top-movie-wrap">
+                                         <div class="top-movie-img">
+                                            <a href="#">
+                                            <img src="movieImg/lollywood/arth.jpg" alt="top movies" />
+                                            </a>
+                                         </div>
+                                         <div class="thumb-hover">
+                                            <a class="play-video" href="https://www.youtube.com/watch?v=1Q8fG0TtVAY"><i class="fa fa-play"></i></a>
+                                            <div class="thumb-date">
+                                               <span>05:30</span>
+                                            </div>
+                                         </div>
+                                      </div>
+                                      
+                                   </div>
+                                </div>
+                             </div>
+                             <!-- End Row -->
+                          </div>
+                       </div>
+                       <!-- Horror area start -->
+                       <div class="tab-pane fade" id="pills-upcoming" role="tabpanel" aria-labelledby="pills-upcoming-tab">
+                          <div class="tab-movies">
+                             <div class="row">
+                                <div class="col-lg-3 col-sm-6">
+                                   <div class="itemBox Hollywood">
+                                   <div class="single-top-movie">
+                                      <div class="top-movie-wrap">
+                                         <div class="top-movie-img">
+                                            <a href="#">
+                                            <img src="movieImg/popye.jfif" alt="top movies" />
+                                            </a>
+                                         </div>
+                                         <div class="thumb-hover">
+                                            <a class="play-video" href="https://www.youtube.com/watch?v=1Q8fG0TtVAY"><i class="fa fa-play"></i></a>
+                                            <div class="thumb-date">
+                                               <span>05:30</span>
+                                            </div>
+                                         </div>
+                                      </div>
+                                      
+                                   </div>
+                                </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                   <div class="itemBox Hollywood">
+                                   <div class="single-top-movie">
+                                      <div class="top-movie-wrap">
+                                         <div class="top-movie-img">
+                                            <a href="#">
+                                            <img src="movieImg/black.jfif" alt="top movies" />
+                                            </a>
+                                         </div>
+                                         <div class="thumb-hover">
+                                            <a class="play-video" href="https://www.youtube.com/watch?v=1Q8fG0TtVAY"><i class="fa fa-play"></i></a>
+                                            <div class="thumb-date">
+                                               <span>05:30</span>
+                                            </div>
+                                         </div>
+                                      </div>
+                                      
+                                   </div>
+                                </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                   <div class="itemBox Hollywood">
+                                   <div class="single-top-movie">
+                                      <div class="top-movie-wrap">
+                                         <div class="top-movie-img">
+                                            <a href="#">
+                                            <img src="movieImg/ticket3.jpg" alt="top movies" />
+                                            </a>
+                                         </div>
+                                         <div class="thumb-hover">
+                                            <a class="play-video" href="https://www.youtube.com/watch?v=1Q8fG0TtVAY"><i class="fa fa-play"></i></a>
+                                            <div class="thumb-date">
+                                               <span>05:30</span>
+                                            </div>
+                                         </div>
+                                      </div>
+                                      
+                                   </div>
+                                </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                   <div class="itemBox Hollywood">
+                                   <div class="single-top-movie">
+                                      <div class="top-movie-wrap">
+                                         <div class="top-movie-img">
+                                            <a href="#">
+                                            <img src="movieImg/adam.jfif" alt="top movies" />
+                                            </a>
+                                         </div>
+                                         <div class="thumb-hover">
+                                            <a class="play-video" href="https://www.youtube.com/watch?v=1Q8fG0TtVAY"><i class="fa fa-play"></i></a>
+                                            <div class="thumb-date">
+                                               <span>05:30</span>
+                                            </div>
+                                         </div>
+                                      </div>
+                                      
+                                   </div>
+                                </div>
+                             </div>
+                             </div>
+                             <!-- End Row -->
+                             <div class="row">
+                                <div class="col-lg-3 col-sm-6">
+                                   <div class="itemBox Hollywood">
+                                   <div class="single-top-movie">
+                                      <div class="top-movie-wrap">
+                                         <div class="top-movie-img">
+                                            <a href="#">
+                                            <img src="movieImg/blade.jfif" alt="top movies" />
+                                            </a>
+                                         </div>
+                                         <div class="thumb-hover">
+                                            <a class="play-video" href="https://www.youtube.com/watch?v=1Q8fG0TtVAY"><i class="fa fa-play"></i></a>
+                                            <div class="thumb-date">
+                                               <span>05:30</span>
+                                            </div>
+                                         </div>
+                                      </div>
+                                      
+                                   </div>
+                                </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                   <div class="itemBox Hollywood">
+                                   <div class="single-top-movie">
+                                      <div class="top-movie-wrap">
+                                         <div class="top-movie-img">
+                                            <a href="#">
+                                            <img src="movieImg/deadpool.png" alt="top movies" />
+                                            </a>
+                                         </div>
+                                         <div class="thumb-hover">
+                                            <a class="play-video" href="https://www.youtube.com/watch?v=1Q8fG0TtVAY"><i class="fa fa-play"></i></a>
+                                            <div class="thumb-date">
+                                               <span>05:30</span>
+                                            </div>
+                                         </div>
+                                      </div>
+                                      
+                                   </div>
+                                </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                   <div class="itemBox Hollywood">
+                                   <div class="single-top-movie">
+                                      <div class="top-movie-wrap">
+                                         <div class="top-movie-img">
+                                            <a href="#">
+                                            <img src="movieImg/f9.webp" alt="top movies" />
+                                            </a>
+                                         </div>
+                                         <div class="thumb-hover">
+                                            <a class="play-video" href="https://www.youtube.com/watch?v=1Q8fG0TtVAY"><i class="fa fa-play"></i></a>
+                                            <div class="thumb-date">
+                                               <span>05:30</span>
+                                            </div>
+                                         </div>
+                                      </div>
+                                      
+                                   </div>
+                                </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                   <div class="itemBox Hollywood">
+                                   <div class="single-top-movie">
+                                      <div class="top-movie-wrap">
+                                         <div class="top-movie-img">
+                                            <a href="#">
+                                            <img src="movieImg/Shang.jfif" alt="top movies" />
+                                            </a>
+                                         </div>
+                                         <div class="thumb-hover">
+                                            <a class="play-video" href="https://www.youtube.com/watch?v=1Q8fG0TtVAY"><i class="fa fa-play"></i></a>
+                                            <div class="thumb-date">
+                                               <span>05:30</span>
+                                            </div>
+                                         </div>
+                                      </div>
+                                      
+                                   </div>
+                                </div>
+                             </div>
+                             </div>
+                             <!-- End Row -->
+                          </div>
+                       </div>
+                       
+     
+                       <!-- Bollywood area start -->
+                       <div class="tab-pane fade show " id="pills-viewed" role="tabpanel" aria-labelledby="pills-viewed-tab">
+                          <div class="tab-movies">
+                             <div class="row">
+                                <div class="col-lg-3 col-sm-6">
+                                   <div class="itemBox Bollywood">
+                                   <div class="single-top-movie">
+                                      <div class="top-movie-wrap">
+                                         <div class="top-movie-img">
+                                            <a href="#">
+                                            <img src="movieImg/bachan.jfif" alt="top movies" />
+                                            </a>
+                                         </div>
+                                         <div class="thumb-hover">
+                                            <a class="play-video" href="https://www.youtube.com/watch?v=1Q8fG0TtVAY"><i class="fa fa-play"></i></a>
+                                            <div class="thumb-date">
+                                               <span>05:30</span>
+                                            </div>
+                                         </div>
+                                      </div>
+                                      
+                                   </div>
+                                </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                   <div class="itemBox Bollywood">
+                                   <div class="single-top-movie">
+                                      <div class="top-movie-wrap">
+                                         <div class="top-movie-img">
+                                            <a href="#">
+                                            <img src="movieImg/bhaagi.jpg" alt="top movies" />
+                                            </a>
+                                         </div>
+                                         <div class="thumb-hover">
+                                            <a class="play-video" href="https://www.youtube.com/watch?v=1Q8fG0TtVAY"><i class="fa fa-play"></i></a>
+                                            <div class="thumb-date">
+                                               <span>05:30</span>
+                                            </div>
+                                         </div>
+                                      </div>
+                                      
+                                   </div>
+                                </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                   <div class="itemBox Bollywood">
+                                   <div class="single-top-movie">
+                                      <div class="top-movie-wrap">
+                                         <div class="top-movie-img">
+                                            <a href="#">
+                                            <img src="movieImg/antim.webp" alt="top movies" />
+                                            </a>
+                                         </div>
+                                         <div class="thumb-hover">
+                                            <a class="play-video" href="https://www.youtube.com/watch?v=1Q8fG0TtVAY"><i class="fa fa-play"></i></a>
+                                            <div class="thumb-date">
+                                               <span>05:30</span>
+                                            </div>
+                                         </div>
+                                      </div>
+                                      
+                                   </div>
+                                </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                   <div class="itemBox Bollywood">
+                                   <div class="single-top-movie">
+                                      <div class="top-movie-wrap">
+                                         <div class="top-movie-img">
+                                            <a href="#">
+                                            <img src="movieImg/saga.jfif" alt="top movies" />
+                                            </a>
+                                         </div>
+                                         <div class="thumb-hover">
+                                            <a class="play-video" href="https://www.youtube.com/watch?v=1Q8fG0TtVAY"><i class="fa fa-play"></i></a>
+                                            <div class="thumb-date">
+                                               <span>05:30</span>
+                                            </div>
+                                         </div>
+                                      </div>
+                                      
+                                   </div>
+                                </div>
+                             </div>
+                             </div>
+                             <!-- End Row -->
+                             <div class="row">
+                                <div class="col-lg-3 col-sm-6">
+                                   <div class="itemBox Bollywood">
+                                   <div class="single-top-movie">
+                                      <div class="top-movie-wrap">
+                                         <div class="top-movie-img">
+                                            <a href="#">
+                                            <img src="movieImg/Vivegam-Poster.jpg" alt="top movies" />
+                                            </a>
+                                         </div>
+                                         <div class="thumb-hover">
+                                            <a class="play-video" href="https://www.youtube.com/watch?v=1Q8fG0TtVAY"><i class="fa fa-play"></i></a>
+                                            <div class="thumb-date">
+                                               <span>05:30</span>
+                                            </div>
+                                         </div>
+                                      </div>
+                                      
+                                   </div>
+                                </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                   <div class="itemBox Bollywood">
+                                   <div class="single-top-movie">
+                                      <div class="top-movie-wrap">
+                                         <div class="top-movie-img">
+                                            <a href="#">
+                                            <img src="movieImg/miza.jpg" alt="top movies" />
+                                            </a>
+                                         </div>
+                                         <div class="thumb-hover">
+                                            <a class="play-video" href="https://www.youtube.com/watch?v=1Q8fG0TtVAY"><i class="fa fa-play"></i></a>
+                                            <div class="thumb-date">
+                                               <span>05:30</span>
+                                            </div>
+                                         </div>
+                                      </div>
+                                      
+                                   </div>
+                                </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                   <div class="itemBox Bollywood">
+                                   <div class="single-top-movie">
+                                      <div class="top-movie-wrap">
+                                         <div class="top-movie-img">
+                                            <a href="#">
+                                            <img src="movieImg/lollywood/puspa.jfif" alt="top movies" />
+                                            </a>
+                                         </div>
+                                         <div class="thumb-hover">
+                                            <a class="play-video" href="https://www.youtube.com/watch?v=1Q8fG0TtVAY"><i class="fa fa-play"></i></a>
+                                            <div class="thumb-date">
+                                               <span>05:30</span>
+                                            </div>
+                                         </div>
+                                      </div>
+                                      
+                                   </div>
+                                </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                   <div class="itemBox Bollywood">
+                                   <div class="single-top-movie">
+                                      <div class="top-movie-wrap">
+                                         <div class="top-movie-img">
+                                            <a href="#">
+                                            <img src="movieImg/lollywood/83.jfif" alt="top movies" />
+                                            </a>
+                                         </div>
+                                         <div class="thumb-hover">
+                                            <a class="play-video" href="https://www.youtube.com/watch?v=1Q8fG0TtVAY"><i class="fa fa-play"></i></a>
+                                            <div class="thumb-date">
+                                               <span>05:30</span>
+                                            </div>
+                                         </div>
+                                      </div>
+                                      
+                                   </div>
+                                </div>
+                             </div>
+                             </div>
+                             <!-- End Row -->
+                          </div>
+                       </div>
+     
+                       <!-- Tv Series area start -->
+                       <div class="tab-pane fade" id="pills-rated" role="tabpanel" aria-labelledby="pills-rated-tab">
+                          <div class="tab-movies">
+                             <div class="row">
+                                <div class="col-lg-3 col-sm-6">
+                                   <div class="itemBox TvSeries">
+                                   <div class="single-top-movie">
+                                      <div class="top-movie-wrap">
+                                         <div class="top-movie-img">
+                                            <a href="#">
+                                            <img src="movieImg/season/daredevil.jfif" alt="top movies" />
+                                            </a>
+                                         </div>
+                                         <div class="thumb-hover">
+                                            <a class="play-video" href="https://www.youtube.com/watch?v=1Q8fG0TtVAY"><i class="fa fa-play"></i></a>
+                                            <div class="thumb-date">
+                                               <span>05:30</span>
+                                            </div>
+                                         </div>
+                                      </div>
+                                      
+                                   </div>
+                                </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                   <div class="itemBox TvSeries">
+                                   <div class="single-top-movie">
+                                      <div class="top-movie-wrap">
+                                         <div class="top-movie-img">
+                                            <a href="#">
+                                            <img src="movieImg/season/LOKI.jpeg" alt="top movies" />
+                                            </a>
+                                         </div>
+                                         <div class="thumb-hover">
+                                            <a class="play-video" href="https://www.youtube.com/watch?v=1Q8fG0TtVAY"><i class="fa fa-play"></i></a>
+                                            <div class="thumb-date">
+                                               <span>05:30</span>
+                                            </div>
+                                         </div>
+                                      </div>
+                                     
+                                   </div>
+                                   </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                   <div class="itemBox TvSeries">
+                                   <div class="single-top-movie">
+                                      <div class="top-movie-wrap">
+                                         <div class="top-movie-img">
+                                            <a href="#">
+                                            <img src="movieImg/season/lucifer.jfif" alt="top movies" />
+                                            </a>
+                                         </div>
+                                         <div class="thumb-hover">
+                                            <a class="play-video" href="https://www.youtube.com/watch?v=1Q8fG0TtVAY"><i class="fa fa-play"></i></a>
+                                            <div class="thumb-date">
+                                               <span>05:30</span>
+                                            </div>
+                                         </div>
+                                      </div>
+                                      
+                                   </div>
+                                   </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                   <div class="itemBox TvSeries">
+                                   <div class="single-top-movie">
+                                      <div class="top-movie-wrap">
+                                         <div class="top-movie-img">
+                                            <a href="#">
+                                            <img src="movieImg/season/money.jpeg" alt="top movies" />
+                                            </a>
+                                         </div>
+                                         <div class="thumb-hover">
+                                            <a class="play-video" href="https://www.youtube.com/watch?v=1Q8fG0TtVAY"><i class="fa fa-play"></i></a>
+                                            <div class="thumb-date">
+                                               <span>05:30</span>
+                                            </div>
+                                         </div>
+                                      </div>
+                                      
+                                   </div>
+                                </div>
+                             </div>
+                             </div>
+                             <!-- End Row -->
+                             <div class="row">
+                                <div class="col-lg-3 col-sm-6">
+                                   <div class="itemBox TvSeries">
+                                   <div class="single-top-movie">
+                                      <div class="top-movie-wrap">
+                                         <div class="top-movie-img">
+                                            <a href="#">
+                                            <img src="movieImg/season/flash.jpg" alt="top movies" />
+                                            </a>
+                                         </div>
+                                         <div class="thumb-hover">
+                                            <a class="play-video" href="https://www.youtube.com/watch?v=1Q8fG0TtVAY"><i class="fa fa-play"></i></a>
+                                            <div class="thumb-date">
+                                               <span>05:30</span>
+                                            </div>
+                                         </div>
+                                      </div>
+                                      
+                                   </div>
+                                </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                   <div class="itemBox TvSeries">
+                                   <div class="single-top-movie">
+                                      <div class="top-movie-wrap">
+                                         <div class="top-movie-img">
+                                            <a href="#">
+                                            <img src="movieImg/season/squid.jpg" alt="top movies" />
+                                            </a>
+                                         </div>
+                                         <div class="thumb-hover">
+                                            <a class="play-video" href="https://www.youtube.com/watch?v=1Q8fG0TtVAY"><i class="fa fa-play"></i></a>
+                                            <div class="thumb-date">
+                                               <span>05:30</span>
+                                            </div>
+                                         </div>
+                                      </div>
+                                      
+                                   </div>
+                                </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                   <div class="itemBox TvSeries">
+                                   <div class="single-top-movie">
+                                      <div class="top-movie-wrap">
+                                         <div class="top-movie-img">
+                                            <a href="#">
+                                            <img src="movieImg/season/stranger.jpg" alt="top movies" />
+                                            </a>
+                                         </div>
+                                         <div class="thumb-hover">
+                                            <a class="play-video" href="https://www.youtube.com/watch?v=1Q8fG0TtVAY"><i class="fa fa-play"></i></a>
+                                            <div class="thumb-date">
+                                               <span>05:30</span>
+                                            </div>
+                                         </div>
+                                      </div>
+                                      
+                                   </div>
+                                </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                   <div class="itemBox TvSeries">
+                                   <div class="single-top-movie">
+                                      <div class="top-movie-wrap">
+                                         <div class="top-movie-img">
+                                            
+                                            
+                                         <img src="movieImg/season/wanda.jfif" alt="top movies" />
+                                         
+                                         
+                                         <div class="thumb-hover">
+                                            <a class="play-video" href="https://www.youtube.com/watch?v=1Q8fG0TtVAY"><i class="fa fa-play"></i></a>
+                                            <div class="thumb-date">
+                                               <span>05:30</span>
+                                            </div>
+                                         </div>
+                                         </div>
+                                      </div>
+                                      
+                                   </div>
+                                </div>
+                             </div>
+                             </div>
+                             <!-- End Row -->
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </section>
+     <!-- Tv Movies Area End -->
+
+
+		<!-- Start Footer Area -->
+		<footer class="footer-top-area pt-100 ">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<div class="single-widget">
+                            <div class="footer-title">
+                                <h1 class="title">KNIGHTFLIX</h1>
+                            </div>
+							<div class="newsletter-wrap">
+								<h3>Contact Via Email</h3>
+								<form class="newsletter-form" data-toggle="validator">
+									<input type="email" class="form-control" placeholder="Enter email address" name="EMAIL" required autocomplete="off">
+		
+									<button class="send-btn" type="submit">
+										<i class="bx bx-right-arrow-alt"></i>
+									</button>
+		
+									<div id="validator-newsletter-2" class="form-result"></div>
+								</form>
+							</div>
+
+						
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="single-widget">
+							<h3>Contact Us</h3>
+
+							<ul class="address">
+								<li>
+                                    <i class='bx bx-map-pin' ></i>
+                                    <span>Sector 5-D, Surjani Town<br> Karachi, Pakistan</span>
+								</li>
+                                <li>
+                                
+                                    <i class='bx bx-map-pin'></i>
+                                    <span>Abdullah Banglows, Sector 6,<br> Karachi, Pakistan</span>
+                                    
+								</li>
+
+								<li>
+                                    <i class='bx bxs-envelope' ></i>
+                                    <a href="mailto:shahryaraptech@gmail.com" target="_self">shahryaraptech@gmail.com</a>
+                                    <a href="mailto:shahryaraptech@gmail.com" target="_self">amankhan03142@gmail.com</a>
+
+									
+								</li>
+
+								<li>
+                                    <i class='bx bxs-phone' ></i>
+                                    <a href="tel:+92-318-208-1761">+92 318 208 1761</a>
+                                    <a href="tel:+92-314-246-8915">+92 314 246 8915</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="col-lg-3 col-md-6">
+						<div class="single-widget">
+							<h3>Additional Links</h3>
+
+							<ul class="additional-link">
+								<li>
+									<a href="#">About</a>
+								</li>
+								<li>
+									<a href="#">Team</a>
+								</li>
+								<li>
+									<a href="#">Help (FAQ)</a>
+								</li>
+								<li>
+									<a href="#">Contacts</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="single-widget">
+							<h3>Follow Links</h3>
+
+                            <ul class="social-wrap">
+								<li>
+									<a href="https://twitter.com/i/flow/login" target="_blank">
+										<i class="bx bxl-twitter"></i>
+									</a>
+								</li>
+
+								<li>
+									<a href="https://www.instagram.com/" target="_blank">
+										<i class="bx bxl-instagram"></i>
+									</a>
+								</li>
+
+								<li>
+									<a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank">
+										<i class="bx bxl-facebook"></i>
+									</a>
+								</li>
+
+								<li>
+									<a href="https://www.linkedin.com/login" target="_blank">
+                                        <i class='bx bxl-linkedin' ></i>
+    									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- End Footer Area -->
+
+		<!-- Start Footer Bottom Area -->
+		<footer class="footer-bottom-area">
+			<div class="container">
+				<div class="copyright-wrap">
+					<p>Copyright @2022 KnightFlix. Designed By <a>Aman & Sherry</a></p>
+				</div>
+			</div>
+		</footer>
+		<!-- End Footer Bottom Area -->
+    <!-- Start Go Top Area -->
+    <div class="go-top">
+        <i class='bx bx-chevrons-up'></i>
+        <i class='bx bx-chevrons-up'></i>
+    </div>
+    <!-- End Go Top Area -->
+
+    <script src="js/demoData.js"></script>
+    <script>
+        var newProduct = "";
+    
+        for (var i in products) 
+        {
+        
+   
+            newProduct += "<div class='movie_card ' >" +
+                    "<div class='info_section'>" + 
+                    " <img class='locandina' src=" + products[i].picture+ " /> " + 
+                    "<div class='video-button'>"+
+                        "<a class='video-btn'>"+
+                            "<i class='bx bx-play'></i>"+
+                            "</a>"+
+                            " </div>"+
+                    "<div class='movie_header'>" +
+                    "<h1>" + products[i].MName + "</h1>" + 
+                    "<h4>Release Date " + products[i].ReleaseD + "</h4>" + 
+                    "<span class='minutes'>" + products[i].RunTime + "min</span>" + 
+                    "<p class='type'>" + products[i].Genre + "</p>" + 
+                    "</div>" + 
+                    "<div class='movie_desc'>" + 
+                    "    <p class='desc-text'> " + products[i].ShortDesc + " " + 
+                    " </p>" + 
+                    "</div>" + 
+                        "</div>"+
+                        "<div class='blur_back'><img src=" + products[i].picture + " ></div>"+
+    
+                        "</div>"+
+                        "</div>";
+        }
+        document.getElementById("product-list").innerHTML += newProduct;
+    </script>
+    <script src="js/Search.js"></script>
+    <!-- scripts start -->
+    <script src="js/plugins.js">
+    </script>
+    <script src="js/intro.js"></script>
+    </script>
+    <script src="js/home.js"></script>
+    <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Meanmenu JS -->
+    <script src="js/jquery.meanmenu.js"></script>
+    <!-- Wow JS -->
+    <!-- Owl Carousel JS -->
+    <script src="js/owl.carousel.js"></script>
+    <!-- Carousel Thumbs JS -->
+    <script src="js/carousel-thumbs.js"></script>
+    <!-- Owl Magnific JS -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Nice Select JS -->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/plugins1.js"></script>
+    <script src="js/main2.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/FavIcon.js"></script>
+    <!-- Jquery-3.5.1.Slim.Min.JS -->
+    <script src="cartAssets/js/jquery-3.5.1.slim.min.js"></script>
+    <!-- Popper JS -->
+    <!-- Bootstrap JS -->
+    <script src="cartAssets\js\bootstrap.min.js"></script>
+    <!-- Meanmenu JS -->
+    <script src="cartAssets/js/jquery.meanmenu.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="cartAssets/js/owl.carousel.js"></script>
+    <!-- Carousel Thumbs JS -->
+    <script src="cartAssets/js/carousel-thumbs.js"></script>
+    <!-- Owl Magnific JS -->
+    <!-- Nice Select JS -->
+    <script src="cartAssets/js/jquery.nice-select.min.js"></script>
+    <!-- Custom JS -->
+    <script src="cartAssets/js/custom.js"></script>
+
+    <script src="js/Trailer.js"></script>
+
+
+
+    <!-- scripts end -->
+
+
+</body>
+
+
+</html>
+
+
+
+

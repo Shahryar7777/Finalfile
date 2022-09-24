@@ -1,0 +1,739 @@
+<!doctype html>
+<html lang="zxx">
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/png" href="movieImg/kf-logo.png">
+
+
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/Search.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css\Cart.css">
+    <link rel="stylesheet" href="css\cartResponsive.css">
+    <link rel="stylesheet" href="cartAssets/css/bootstrap.min.css">
+    <!-- Owl Theme Default CSS -->
+    <link rel="stylesheet" href="cartAssets/css/owl.theme.default.min.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="cartAssets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="cartAssets/css/boxicons.min.css">
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="cartAssets/css/flaticon.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="cartAssets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- ===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link
+        href="http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900%7CMontserrat:400,700%7COswald:300,400,700"
+        rel="stylesheet" type="text/css">
+    <title>KnightFlix - Movies Watching & Ticket Booking</title>
+</head>
+<body>
+    <!-- Start Preloader Area -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!-- End Preloader Area -->
+ <!-- Navigation Bar Start -->
+ <nav class="navbar navbar-fixed-top navbar-bg-switch">
+
+    <div class="container">
+        <!-- Start Navbar Area -->
+        <div class="navbar-area">
+            <!-- Menu For Mobile Device -->
+            <div class="mobile-nav">
+            </div>
+            <!-- Menu For Desktop Device -->
+            <div class="main-navigation fadeIn-element main-nav">
+                <div class=" collapse navbar-collapse mean-menu">
+                    <ul class="nav navbar-nav navbar-right ">
+                        <li class="nav-item">
+                            <a href="Home-page.html" class="nav-link page-scroll link-underline-menu  ">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link page-scroll link-underline-menu ">Movies
+                            <i class="bx bx-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a href="movies-page.html" class="nav-link">Movies</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a href="Trailers.html" class="nav-link">Trailers</a>
+                            </li>
+                        </ul>
+                        </li>
+                        <li class="nav-item" >
+                            <a href="genre.html" class="nav-link page-scroll link-underline-menu ">Genre</a>
+                        </li>
+                       
+                        <li class="nav-item" id="title">
+
+                                    <h1 class="title"><img src="movieImg/kf-logo-letter-initial-logo-designs-template-free-vector-removebg.png" class="img1"></h1>
+                                    <h1 class="title-light"><img src="movieImg/kf-logo.png" class="img1"></h1>
+
+                        </li>
+
+
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link page-scroll link-underline-menu active">
+                                Shop
+                                <i class="bx bx-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a href="shop-page.html" class="nav-link">Shop</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="cart-page.html" class="nav-link">Cart</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="checkout.html" class="nav-link">Checkout</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="productDetail.html" class="nav-link">Product Details</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="wishlist.html" class="nav-link active">Wishlist</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link page-scroll link-underline-menu">
+                                about
+                            </a>
+
+
+                        </li>
+                        <li class="nav-item">
+                            <a href="Contact-page.html" class="nav-link page-scroll link-underline-menu">
+                                contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+    </div> 
+<div class="close-btn">
+    <i class='bx bxs-x-square'></i>     </div> 
+ <div class="search-btn">
+    <i class='bx bx-search icon'></i>
+</div>
+
+
+ <div class="wrap">
+    <div class="search">
+       <input type="text" class="searchTerm" placeholder="What are you looking for?" onkeyup="search()" id="search-Bar">
+       <button type="submit" class="search-Button">
+        <i class='bx bx-search icon'></i>
+    </button>
+    </div>
+    <div class="container-movie row-movie " id="product-list">
+
+    </div>
+ </div>
+ <img src="movieImg/kf-logo-letter-initial-logo-designs-template-free-vector-removebg.png" id="mobile-img"></h1>
+ <img src="movieImg/kf-logo.png" id="mobile-img-light"></h1>
+
+
+</nav>
+<!-- Navigation Bar End -->
+
+<!-- SideBar Html Start -->
+<nav class="sidebar close" id="nav1">
+    <i class='bx bx-x siderbarClose' id="toggle1"></i>
+    <header>
+        <div class="image-text">
+            <div class="image">
+                <img src="img/avatar-370-456322-512.webp" id="photo" class="toggle1">
+                <input type="file" id="file">
+                <label for="file" id="uploadBtn">Choose Photo</label>
+            </div>
+        </div>
+    </header>
+    <div class="text logo-text">
+        <span class="name" id="getName">sss</span>
+        <span class="profession" id="getEmail">ss</span>
+    </div>
+    <div class="menu-bar">
+        <div class="menu">
+            
+            <ul class="menu-links">
+                <li class="nav-link">
+                    <a href="Home-page.html">
+                        <i class='bx bx-home-alt icon'></i>
+                        <span class="text nav-text">Home</span>
+                    </a>
+                </li>
+                
+                <li class="nav-link">
+                    <a href="shop-page.html">
+                        <i class='bx bx-shopping-bag icon'></i> <span class="text nav-text">Shop</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="cart-page.html">
+                        <i class='bx bx-cart icon'></i> 
+                        <span class="text nav-text">Cart</span></a>
+                </li>
+                <li class="">
+                    <a href="index.html">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+                
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- SideBar Html End -->
+
+    <!-- Start Page Title Area -->
+    <div class="page-title-area bg-15">
+        <div class="container">
+            <div class="page-title-content">
+                <h2>Wishlist</h2>
+                <ul>
+                    <li>
+                        <a href="Home-page.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="active">Wishlist</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End Page Title Area -->
+
+    <!-- START CART AREA -->
+    <div class="cart-area ptb-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <form>
+                        <div class="cart-wraps">
+                            <div class="cart-table table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Image</th>
+                                            <th scope="col">Product Name</th>
+                                            <th scope="col">Price</th>
+                                            <th scope="col">Quantity</th>
+                                            <th scope="col">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr id="cart1" style="display: none;">
+                                            <td class="product-thumbnail">
+                                                <a href="#">
+                                                    <img src="movieImg/ticket5.jpg" alt="Image">
+                                                </a>
+                                            </td>
+
+                                            <td class="product-name">
+                                                <a href="#">The Flash</a>
+                                            </td>
+
+                                            <td class="product-price">
+                                                <span>$<span class="unit-amount" id="getValue">39.00</span></span>
+                                            </td>
+
+                                            <td class="product-quantity">
+                                                <div class="input-counter">
+
+                                                    <span class="minus-btn" onclick="decreaseNumber('textbox','itemval')">
+															<i class='bx bx-minus' ></i>
+														</span>
+                                                    <input type="text" value="0" id="textbox">
+                                                    <span class="plus-btn" onclick="increaseNumber('textbox','itemval')">
+															<i class='bx bx-plus' ></i>
+														</span>
+                                                </div>
+                                            </td>
+                                            <td class="product-subtotal">
+                                                <span class="subtotal-span" >$<span class="subtotal-amount" id="itemval"></span> </span>
+
+                                                <a  class="remove" onclick="removeCart1()">
+                                                    <i class="bx bx-x"></i>
+                                                </a>
+                                            </td>
+                                        </tr >
+
+                                        <tr id="cart2" style="display: none;" >
+                                            <td class="product-thumbnail">
+                                                <a href="#">
+                                                    <img src="movieImg/ticket2.jfif" alt="Image">
+                                                </a>
+                                            </td>
+
+                                            <td class="product-name">
+                                                <a href="#">Spider Man 3</a>
+                                            </td>
+
+                                            <td class="product-price">
+                                                <span>$<span class="unit-amount" id="getValue1">29.00</span></span>
+                                            </td>
+
+                                            <td class="product-quantity">
+                                                <div class="input-counter">
+                                                    <span class="minus-btn" onclick="decreaseNumber1('textbox1','itemval1')">
+															<i class='bx bx-minus' ></i>
+														</span>
+                                                    <input type="text" value="0" id="textbox1">
+                                                    <span class="plus-btn" onclick="increaseNumber1('textbox1','itemval1')">
+															<i class='bx bx-plus' ></i>
+														</span>
+                                                </div>
+                                            </td>
+
+                                            <td class="product-subtotal">
+                                                <span class="subtotal-span">$<span class="subtotal-amount" id="itemval1"></span></span>
+                                                <a href="#" class="remove" onclick="removeCart2()">
+                                                    <i class="bx bx-x"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                         <tr id="cart3" style="display: none;" >
+												<td class="product-thumbnail">
+													<a href="#">
+                                                        <img src="movieImg/ticket3.jpg" alt="Image">
+													</a>
+												</td>
+
+												<td class="product-name">
+													<a href="#">Thor 4</a>
+												</td>
+
+												<td class="product-price">
+                                                    <span>$<span class="unit-amount" id="getValue2">25.00</span></span>
+												</td>
+
+												<td class="product-quantity">
+													<div class="input-counter">
+                                                        <span class="minus-btn" onclick="decreaseNumber2('textbox2','itemval2')">
+															<i class='bx bx-minus' ></i>
+														</span>
+                                                        <input type="text" value="0" id="textbox2">
+                                                        <span class="plus-btn" onclick="increaseNumber2('textbox2','itemval2')">
+															<i class='bx bx-plus' ></i>
+														</span>
+													</div>
+												</td>
+
+												<td class="product-subtotal">
+                                                    <span class="subtotal-span">$<span class="subtotal-amount" id="itemval2"></span></span>
+
+													<a class="remove" onclick="removeCart3()">
+														<i class="bx bx-x"></i>
+													</a>
+												</td>
+											</tr>
+
+											<tr id="cart4" style="display: none;">
+												<td class="product-thumbnail">
+													<a >
+                                                        <img src="movieImg/ticket4.jpg" alt="Image">
+													</a>
+												</td>
+
+												<td class="product-name">
+													<a >The Batman</a>
+												</td>
+
+												<td class="product-price">
+                                                    <span>$<span class="unit-amount" id="getValue3">35.00</span></span>
+												</td>
+
+												<td class="product-quantity">
+													<div class="input-counter">
+                                                        <span class="minus-btn" onclick="decreaseNumber3('textbox3','itemval3')">
+															<i class='bx bx-minus' ></i>
+														</span>
+                                                        <input type="text" value="0" id="textbox3">
+                                                        <span class="plus-btn" onclick="increaseNumber3('textbox3','itemval3')">
+															<i class='bx bx-plus' ></i>
+														</span>
+													</div>
+												</td>
+
+												<td class="product-subtotal">
+                                                    <span class="subtotal-span">$<span class="subtotal-amount" id="itemval3"></span></span>
+
+													<a class="remove" onclick="removeCart4()">
+														<i class="bx bx-x"></i>
+													</a>
+												</td>
+											</tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="wishlistBtn">
+                        <a href="checkout.html" class="default-btn two">
+                            <i class="fa fa-ticket"></i> BooK Ticket
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END CART AREA -->
+       <!-- Start Latest Trailer Area Two -->
+       <section class="latest-trailer-two pb-70">
+        <div class="container-contact">
+            <div class="section-title">
+                
+                <h2>Related Products
+
+                   
+                </h2>
+            </div>
+
+            <div class="latest-trailer-wrap-two owl-theme owl-carousel">
+                <div class="single-shop">
+                    <div class="shop-img">
+                        <img src="movieImg/ticket5.jpg" alt="Image">                     
+
+                        <a href="checkout.html" class="default-btn" style="margin-bottom: 60px">
+                            <i class="fa fa-ticket" ></i> BooK Ticket
+                        </a>
+                        <a href="cart-page.html" class="default-btn" onclick="addCart1()">
+                            <i class="flaticon-shopping-cart"></i> Add To Cart
+                        </a>
+                        <div class="fav" id="fav" onclick="addCart1()"><i class="bx bx-heart"></i></div>
+
+                    </div>
+
+                    <h3>
+                        <a href="product-details.html">
+                            The Flash
+                        </a>
+                    </h3>
+                    <span>$39.00</span>
+                </div>
+
+                <div class="single-shop">
+                    <div class="shop-img">
+                        <img src="movieImg/ticket2.jfif" alt="Image">
+
+                        <a href="checkout.html" class="default-btn" style="margin-bottom: 60px">
+                            <i class="fa fa-ticket" ></i> BooK Ticket
+                        </a>
+                        <a href="cart-page.html" class="default-btn" onclick="addCart2()">
+                            <i class="flaticon-shopping-cart"></i> Add To Cart
+                        </a>
+                        <div class="fav" id="fav1" onclick="addCart2()"><i class="bx bx-heart"></i></div>
+
+                    </div>
+
+                    <h3>
+                        <a href="product-details.html">
+                            Spider Man 3
+                        </a>
+                    </h3>
+                    <span>$29.00</span>
+                </div>
+
+                <div class="single-shop">
+                    <div class="shop-img">
+                        <img src="movieImg/ticket3.jpg" alt="Image">
+
+                        <a href="checkout.html" class="default-btn" style="margin-bottom: 60px">
+                            <i class="fa fa-ticket" ></i> BooK Ticket
+                        </a>
+                        <a href="cart-page.html" class="default-btn" onclick="addCart3()">
+                            <i class="flaticon-shopping-cart"></i> Add To Cart
+                        </a>
+                        <div class="fav" id="fav2" onclick="addCart3()"><i class="bx bx-heart"></i></div>
+
+                    </div>
+
+                    <h3>
+                        <a href="product-details.html">
+                            Thor 4
+                        </a> 
+                    </h3>
+                    <span>$25.00</span>
+                </div>
+
+                <div class="single-shop">
+                    <div class="shop-img">
+                        <img src="movieImg/ticket4.jpg" alt="Image">
+                        
+
+                        <a href="checkout.html" class="default-btn" style="margin-bottom: 60px">
+                            <i class="fa fa-ticket" ></i> BooK Ticket
+                        </a>
+                        <a  href="cart-page.html" class="default-btn" onclick="addCart4()">
+                            <i class="flaticon-shopping-cart"></i> Add To Cart
+                        </a>
+                        <div class="fav" id="fav3" onclick="addCart4()"><i class="bx bx-heart" ></i></div>
+
+                    </div>
+
+                    <h3>
+                        <a href="product-details.html">
+                            The Batman
+                        </a>
+
+                    </h3>
+                    <span>$35.00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Latest Trailer Area Two -->
+		<!-- Start Footer Area -->
+		<footer class="footer-top-area pt-100 ">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<div class="single-widget">
+                            <div class="footer-title">
+                                <h1 class="title">KNIGHTFLIX</h1>
+                            </div>
+							<div class="newsletter-wrap">
+								<h3>Contact Via Email</h3>
+								<form class="newsletter-form" data-toggle="validator">
+									<input type="email" class="form-control" placeholder="Enter email address" name="EMAIL" required autocomplete="off">
+		
+									<button class="send-btn" type="submit">
+										<i class="bx bx-right-arrow-alt"></i>
+									</button>
+		
+									<div id="validator-newsletter-2" class="form-result"></div>
+								</form>
+							</div>
+
+						
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="single-widget">
+							<h3>Contact Us</h3>
+
+							<ul class="address">
+								<li>
+                                    <i class='bx bx-map-pin' ></i>
+                                    <span>Sector 5-D, Surjani Town<br> Karachi, Pakistan</span>
+								</li>
+                                <li>
+                                
+                                    <i class='bx bx-map-pin'></i>
+                                    <span>Abdullah Banglows, Sector 6,<br> Karachi, Pakistan</span>
+                                    
+								</li>
+
+								<li>
+                                    <i class='bx bxs-envelope' ></i>
+                                    <a href="mailto:shahryaraptech@gmail.com" target="_self">shahryaraptech@gmail.com</a>
+                                    <a href="mailto:shahryaraptech@gmail.com" target="_self">amankhan03142@gmail.com</a>
+
+									
+								</li>
+
+								<li>
+                                    <i class='bx bxs-phone' ></i>
+                                    <a href="tel:+92-318-208-1761">+92 318 208 1761</a>
+                                    <a href="tel:+92-314-246-8915">+92 314 246 8915</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="col-lg-3 col-md-6">
+						<div class="single-widget">
+							<h3>Additional Links</h3>
+
+							<ul class="additional-link">
+								<li>
+									<a href="#">About</a>
+								</li>
+								<li>
+									<a href="#">Team</a>
+								</li>
+								<li>
+									<a href="#">Help (FAQ)</a>
+								</li>
+								<li>
+									<a href="#">Contacts</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="single-widget">
+							<h3>Follow Links</h3>
+
+                            <ul class="social-wrap">
+								<li>
+									<a href="https://twitter.com/i/flow/login" target="_blank">
+										<i class="bx bxl-twitter"></i>
+									</a>
+								</li>
+
+								<li>
+									<a href="https://www.instagram.com/" target="_blank">
+										<i class="bx bxl-instagram"></i>
+									</a>
+								</li>
+
+								<li>
+									<a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank">
+										<i class="bx bxl-facebook"></i>
+									</a>
+								</li>
+
+								<li>
+									<a href="https://www.linkedin.com/login" target="_blank">
+                                        <i class='bx bxl-linkedin' ></i>
+    									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- End Footer Area -->
+
+		<!-- Start Footer Bottom Area -->
+		<footer class="footer-bottom-area">
+			<div class="container">
+				<div class="copyright-wrap">
+					<p>Copyright @2022 KnightFlix. Designed By <a>Aman & Sherry</a></p>
+				</div>
+			</div>
+		</footer>
+		<!-- End Footer Bottom Area -->
+    <!-- Start Go Top Area -->
+    <div class="go-top">
+        <i class='bx bx-chevrons-up'></i>
+        <i class='bx bx-chevrons-up'></i>
+    </div>
+    <!-- End Go Top Area -->
+
+    <script src="js/demoData.js"></script>
+    <script>
+        var newProduct = "";
+    
+        for (var i in products) 
+        {
+        
+   
+            newProduct += "<div class='movie_card ' >" +
+                    "<div class='info_section'>" + 
+                    " <img class='locandina' src=" + products[i].picture+ " /> " + 
+                    "<div class='video-button'>"+
+                        "<a class='video-btn'>"+
+                            "<i class='bx bx-play'></i>"+
+                            "</a>"+
+                            " </div>"+
+                    "<div class='movie_header'>" +
+                    "<h1>" + products[i].MName + "</h1>" + 
+                    "<h4>Release Date " + products[i].ReleaseD + "</h4>" + 
+                    "<span class='minutes'>" + products[i].RunTime + "min</span>" + 
+                    "<p class='type'>" + products[i].Genre + "</p>" + 
+                    "</div>" + 
+                    "<div class='movie_desc'>" + 
+                    "    <p class='desc-text'> " + products[i].ShortDesc + " " + 
+                    " </p>" + 
+                    "</div>" + 
+                        "</div>"+
+                        "<div class='blur_back'><img src=" + products[i].picture + " ></div>"+
+    
+                        "</div>"+
+                        "</div>";
+        }
+        document.getElementById("product-list").innerHTML += newProduct;
+    </script>
+    <script src="js/Search.js"></script>
+    <!-- scripts start -->
+    <script src="js/plugins.js">
+    </script>
+    <script src="js/intro.js"></script>
+    </script>
+    <script src="js/home.js"></script>
+    <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Meanmenu JS -->
+    <script src="js/jquery.meanmenu.js"></script>
+    <!-- Wow JS -->
+    <!-- Owl Carousel JS -->
+    <script src="js/owl.carousel.js"></script>
+    <!-- Carousel Thumbs JS -->
+    <script src="js/carousel-thumbs.js"></script>
+    <!-- Owl Magnific JS -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Nice Select JS -->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/plugins1.js"></script>
+    <script src="js/main2.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/FavIcon.js"></script>
+    <!-- Jquery-3.5.1.Slim.Min.JS -->
+    <script src="cartAssets/js/jquery-3.5.1.slim.min.js"></script>
+    <!-- Popper JS -->
+    <!-- Bootstrap JS -->
+    <script src="cartAssets\js\bootstrap.min.js"></script>
+    <!-- Meanmenu JS -->
+    <script src="cartAssets/js/jquery.meanmenu.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="cartAssets/js/owl.carousel.js"></script>
+    <!-- Carousel Thumbs JS -->
+    <script src="cartAssets/js/carousel-thumbs.js"></script>
+    <!-- Owl Magnific JS -->
+    <!-- Nice Select JS -->
+    <script src="cartAssets/js/jquery.nice-select.min.js"></script>
+    <!-- Custom JS -->
+    <script src="cartAssets/js/custom.js"></script>
+    <script src="js/CartAddRem.js"></script>
+    <script src="js/CartFuntionatliy.js"></script>
+
+    <!-- scripts end -->
+
+
+</body>
+
+
+</html>

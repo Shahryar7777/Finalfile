@@ -1,0 +1,997 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/png" href="movieImg/kf-logo.png">
+
+  
+  
+    <!-- Responsive CSS -->
+	<link rel="stylesheet" href="css/Search.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/moviePlugins.css">
+    <link rel="stylesheet" href="css/movieStyle.css">
+	  <!-- Style CSS -->
+	  <link rel="stylesheet" href="cartAssets/css/style.css">
+	  <link rel="stylesheet" href="css/home.css">
+	  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+	  <link rel="stylesheet" href="css/animate.css">
+
+
+
+    
+    <!-- ===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link
+        href="http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900%7CMontserrat:400,700%7COswald:300,400,700"
+        rel="stylesheet" type="text/css">
+    <!-- Title -->
+    <title>KnightFlix - Movies Watching & Ticket Booking</title>
+</head>
+<body>
+	   <!-- Start Preloader Area -->
+	   <div class="loader-wrapper">
+        <div class="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!-- End Preloader Area -->
+
+ <!-- Navigation Bar Start -->
+ <nav class="navbar navbar-fixed-top navbar-bg-switch">
+
+	<div class="container">
+		<!-- Start Navbar Area -->
+		<div class="navbar-area">
+			<!-- Menu For Mobile Device -->
+			<div class="mobile-nav">
+			</div>
+			<!-- Menu For Desktop Device -->
+			<div class="main-navigation fadeIn-element main-nav">
+				<div class=" collapse navbar-collapse mean-menu">
+					<ul class="nav navbar-nav navbar-right ">
+						<li class="nav-item">
+							<a href="Home-page.html" class="nav-link page-scroll link-underline-menu  ">
+								Home
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link page-scroll link-underline-menu active">Movies
+							<i class="bx bx-chevron-down"></i>
+						</a>
+						<ul class="dropdown-menu">
+							<li class="nav-item">
+								<a href="movies-page.html" class="nav-link active">Movies</a>
+							</li>
+							
+							<li class="nav-item">
+								<a href="Trailers.html" class="nav-link">Trailers</a>
+							</li>
+						</ul>
+						</li>
+						<li class="nav-item" >
+							<a href="genre.html" class="nav-link page-scroll link-underline-menu ">Genre</a>
+						</li>
+					   
+						<li class="nav-item" id="title">
+
+									<h1 class="title"><img src="movieImg/kf-logo-letter-initial-logo-designs-template-free-vector-removebg.png" class="img1"></h1>
+									<h1 class="title-light"><img src="movieImg/kf-logo.png" class="img1"></h1>
+
+						</li>
+
+
+
+						<li class="nav-item">
+							<a href="#" class="nav-link page-scroll link-underline-menu">
+								Shop
+								<i class="bx bx-chevron-down"></i>
+							</a>
+							<ul class="dropdown-menu">
+								<li class="nav-item">
+									<a href="shop-page.html" class="nav-link">Shop</a>
+								</li>
+								<li class="nav-item">
+									<a href="cart-page.html" class="nav-link">Cart</a>
+								</li>
+								<li class="nav-item">
+									<a href="checkout.html" class="nav-link">Checkout</a>
+								</li>
+								<li class="nav-item">
+									<a href="productDetail.html" class="nav-link">Product Details</a>
+								</li>
+								<li class="nav-item">
+									<a href="wishlist.html" class="nav-link">Wishlist</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="nav-item">
+							<a href="about.html" class="nav-link page-scroll link-underline-menu">
+								about
+							</a>
+
+
+						</li>
+						<li class="nav-item">
+							<a href="Contact-page.html" class="nav-link page-scroll link-underline-menu">
+								contact
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper">
+	</div> 
+<div class="close-btn">
+	<i class='bx bxs-x-square'></i>     </div> 
+ <div class="search-btn">
+	<i class='bx bx-search icon'></i>
+</div>
+
+
+ <div class="wrap">
+	<div class="search">
+	   <input type="text" class="searchTerm" placeholder="What are you looking for?" onkeyup="search()" id="search-Bar">
+	   <button type="submit" class="search-Button">
+		<i class='bx bx-search icon'></i>
+	</button>
+	</div>
+	<div class="container-movie row-movie " id="product-list">
+
+	</div>
+ </div>
+ <img src="movieImg/kf-logo-letter-initial-logo-designs-template-free-vector-removebg.png" id="mobile-img"></h1>
+ <img src="movieImg/kf-logo.png" id="mobile-img-light"></h1>
+
+
+</nav>
+<!-- Navigation Bar End -->
+
+<!-- SideBar Html Start -->
+<nav class="sidebar close" id="nav1">
+	<i class='bx bx-x siderbarClose' id="toggle1"></i>
+	<header>
+		<div class="image-text">
+			<div class="image">
+				<img src="img/avatar-370-456322-512.webp" id="photo" class="toggle1">
+				<input type="file" id="file">
+				<label for="file" id="uploadBtn">Choose Photo</label>
+			</div>
+		</div>
+	</header>
+	<div class="text logo-text">
+		<span class="name" id="getName">sss</span>
+		<span class="profession" id="getEmail">ss</span>
+	</div>
+	<div class="menu-bar">
+		<div class="menu">
+			
+			<ul class="menu-links">
+				<li class="nav-link">
+					<a href="Home-page.html">
+						<i class='bx bx-home-alt icon'></i>
+						<span class="text nav-text">Home</span>
+					</a>
+				</li>
+				
+				<li class="nav-link">
+					<a href="shop-page.html">
+						<i class='bx bx-shopping-bag icon'></i> <span class="text nav-text">Shop</span>
+					</a>
+				</li>
+				<li class="nav-link">
+					<a href="cart-page.html">
+						<i class='bx bx-cart icon'></i> 
+						<span class="text nav-text">Cart</span></a>
+				</li>
+				<li class="">
+					<a href="index.html">
+						<i class='bx bx-log-out icon'></i>
+						<span class="text nav-text">Logout</span>
+					</a>
+				</li>
+				
+				<li class="mode">
+					<div class="sun-moon">
+						<i class='bx bx-moon icon moon'></i>
+						<i class='bx bx-sun icon sun'></i>
+					</div>
+					<span class="mode-text text">Dark mode</span>
+
+					<div class="toggle-switch">
+						<span class="switch"></span>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<!-- SideBar Html End -->
+    <!-- Start Page Title Area -->
+    <div class="page-title-area bg-11">
+        <div class="container">
+            <div class="page-title-content">
+                <h2>Movies</h2>
+                <ul>
+                    <li>
+                        <a href="Home-page.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="active">Movies</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <!-- Start Page Title End -->
+
+
+   
+
+
+
+
+<div class="page-single" style="margin-top: 50px; " >
+	<div class="container-movie" >
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<div class="topbar-filter fw">
+					<p>Found <span>1,608 movies</span> in total</p>
+					<label >Sort by:</label>
+					<select >
+						<option value="popularity">Popularity Descending</option>
+						<option value="popularity">Popularity Ascending</option>
+						<option value="rating">Rating Descending</option>
+						<option value="rating">Rating Ascending</option>
+						<option value="date">Release date Descending</option>
+						<option value="date">Release date Ascending</option>
+					</select>
+					<a href="movielist.html" class="list"><i class='bx bx-list-ul'></i></i></a>
+					<a  href="moviegridfw.html" class="grid"><i class='bx bxs-grid' ></i></a>
+				</div>
+				<div class="flex-wrap-movielist mv-grid-fw">
+						<div class="movie-item-style-2 movie-item-style-1">
+							<img src="images/uploads/mv1.jpg" alt="">
+							<div class="hvr-inner">
+	            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+	            			</div>
+							<div class="mv-item-infor">
+								<h6><a href="#">oblivion</a></h6>
+								<p class="rate"><i class="ion-android-star"></i><span>8.1</span> /10</p>
+							</div>
+						</div>					
+						<div class="movie-item-style-2 movie-item-style-1">
+							<img src="images/uploads/mv2.jpg" alt="">
+							<div class="hvr-inner">
+	            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+	            			</div>
+							<div class="mv-item-infor">
+								<h6><a href="#">into the wild</a></h6>
+								<p class="rate"><i class="ion-android-star"></i><span>7.8</span> /10</p>
+							</div>
+						</div>					
+						<div class="movie-item-style-2 movie-item-style-1">
+	            			<img src="images/uploads/mv-item3.jpg" alt="">
+	            			<div class="hvr-inner">
+	            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+	            			</div>
+	            			<div class="mv-item-infor">
+	            				<h6><a href="#">Die hard</a></h6>
+	            				<p class="rate"><i class="ion-android-star"></i><span>7.4</span> /10</p>
+	            			</div>
+	            		</div>					
+						<div class="movie-item-style-2 movie-item-style-1">
+	            			<img src="images/uploads/mv-item4.jpg" alt="">
+	            			<div class="hvr-inner">
+	            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+	            			</div>
+	            			<div class="mv-item-infor">
+	            				<h6><a href="#">The walk</a></h6>
+	            				<p class="rate"><i class="ion-android-star"></i><span>7.4</span> /10</p>
+	            			</div>
+	            		</div>
+	            		<div class="movie-item-style-2 movie-item-style-1">
+							<img src="images/uploads/mv3.jpg" alt="">
+							<div class="hvr-inner">
+	            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+	            			</div>
+							<div class="mv-item-infor">
+								<h6><a href="#">blade runner  </a></h6>
+								<p class="rate"><i class="ion-android-star"></i><span>7.3</span> /10</p>
+							</div>
+						</div>
+						<div class="movie-item-style-2 movie-item-style-1">
+							<img src="images/uploads/mv4.jpg" alt="">
+							<div class="hvr-inner">
+	            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+	            			</div>
+							<div class="mv-item-infor">
+								<h6><a href="#">Mulholland pride</a></h6>
+								<p class="rate"><i class="ion-android-star"></i><span>7.2</span> /10</p>
+							</div>
+						</div>
+						<div class="movie-item-style-2 movie-item-style-1">
+							<img src="images/uploads/mv5.jpg" alt="">
+							<div class="hvr-inner">
+	            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+	            			</div>
+							<div class="mv-item-infor">
+								<h6><a href="#">skyfall: evil of boss</a></h6>
+								<p class="rate"><i class="ion-android-star"></i><span>7.0</span> /10</p>
+							</div>
+						</div>
+						<div class="movie-item-style-2 movie-item-style-1">
+	            			<img src="images/uploads/mv-item1.jpg" alt="">
+	            			<div class="hvr-inner">
+	            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+	            			</div>
+	            			<div class="mv-item-infor">
+	            				<h6><a href="#">Interstellar</a></h6>
+	            				<p class="rate"><i class="ion-android-star"></i><span>7.4</span> /10</p>
+	            			</div>
+	            		</div>
+	            		<div class="movie-item-style-2 movie-item-style-1">
+
+	            			<img src="images/uploads/mv-item2.jpg" alt="">
+	            			<div class="hvr-inner">
+	            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+	            			</div>
+	            			<div class="mv-item-infor">
+	            				<h6><a href="#">The revenant</a></h6>
+	            				<p class="rate"><i class="ion-android-star"></i><span>7.4</span> /10</p>
+	            			</div>
+	            		</div>
+	            		<div class="movie-item-style-2 movie-item-style-1">
+	            			<img src="images/uploads/mv-it10.jpg" alt="">
+	            			<div class="hvr-inner">
+	            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+	            			</div>
+	            			<div class="mv-item-infor">
+	            				<h6><a href="#">harry potter</a></h6>
+	            				<p class="rate"><i class="ion-android-star"></i><span>7.4</span> /10</p>
+	            			</div>
+	            		</div>
+						<div class="movie-item-style-2 movie-item-style-1">
+	            			<img src="images/uploads/mv-it11.jpg" alt="">
+	            			<div class="hvr-inner">
+	            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+	            			</div>
+	            			<div class="mv-item-infor">
+	            				<h6><a href="#">guardians galaxy</a></h6>
+	            				<p class="rate"><i class="ion-android-star"></i><span>7.4</span> /10</p>
+	            			</div>
+	            		</div>
+	            		<div class="movie-item-style-2 movie-item-style-1">
+	            			<img src="images/uploads/mv-it12.jpg" alt="">
+	            			<div class="hvr-inner">
+	            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+	            			</div>
+	            			<div class="mv-item-infor">
+	            				<h6><a href="#">the godfather</a></h6>
+	            				<p class="rate"><i class="ion-android-star"></i><span>7.4</span> /10</p>
+	            			</div>
+	            		</div>
+						<div class="movie-item-style-2 movie-item-style-1">
+	            			<img src="images/uploads/mv-item6.jpg" alt="">
+	            			<div class="hvr-inner">
+	            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+	            			</div>
+	            			<div class="mv-item-infor">
+	            				<h6><a href="#">blue velvet</a></h6>
+	            				<p class="rate"><i class="ion-android-star"></i><span>7.4</span> /10</p>
+	            			</div>
+	            		</div>
+	            		<div class="movie-item-style-2 movie-item-style-1">
+	            			<img src="images/uploads/mv-item7.jpg" alt="">
+	            			<div class="hvr-inner">
+	            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+	            			</div>
+	            			<div class="mv-item-infor">
+	            				<h6><a href="#">gravity</a></h6>
+	            				<p class="rate"><i class="ion-android-star"></i><span>7.4</span> /10</p>
+	            			</div>
+	            		</div>
+	            		<div class="movie-item-style-2 movie-item-style-1">
+	            			<img src="images/uploads/mv-item8.jpg" alt="">
+	            			<div class="hvr-inner">
+	            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+	            			</div>
+	            			<div class="mv-item-infor">
+	            				<h6><a href="#">southpaw</a></h6>
+	            				<p class="rate"><i class="ion-android-star"></i><span>7.4</span> /10</p>
+	            			</div>
+	            		</div>
+	            		<div class="movie-item-style-2 movie-item-style-1">
+	            			<img src="images/uploads/mv-it9.jpg" alt="">
+	            			<div class="hvr-inner">
+	            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+	            			</div>
+	            			<div class="mv-item-infor">
+	            				<h6><a href="#">jurassic park</a></h6>
+	            				<p class="rate"><i class="ion-android-star"></i><span>7.4</span> /10</p>
+	            			</div>
+	            		</div>
+	            		<div class="movie-item-style-2 movie-item-style-1">
+	            			<img src="images/uploads/mv-item9.jpg" alt="">
+	            			<div class="hvr-inner">
+	            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+	            			</div>
+	            			<div class="mv-item-infor">
+	            				<h6><a href="#">the forest</a></h6>
+	            				<p class="rate"><i class="ion-android-star"></i><span>7.4</span> /10</p>
+	            			</div>
+	            		</div>
+	            		<div class="movie-item-style-2 movie-item-style-1">
+	            			<img src="images/uploads/mv-item10.jpg" alt="">
+	            			<div class="hvr-inner">
+	            				<a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+	            			</div>
+	            			<div class="mv-item-infor">
+	            				<h6><a href="#">spectre</a></h6>
+	            				<p class="rate"><i class="ion-android-star"></i><span>7.4</span> /10</p>
+	            			</div>
+	            		</div>
+	            	
+						
+				</div>		
+				<div class="topbar-filter">
+					<label>Movies per page:</label>
+					<select>
+						<option value="range">20 Movies</option>
+						<option value="saab">10 Movies</option>
+					</select>
+					
+					<div class="pagination2">
+						<span>Page 1 of 2:</span>
+						<a class="active" href="#">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">...</a>
+						<a href="#">78</a>
+						<a href="#">79</a>
+						<a href="#"><i class="ion-arrow-right-b"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="slider movie-items " >
+    
+	<div class="container-movie-2 ">
+        
+		
+            <div class="social-link">
+                <p>Popular  <span> Movies</span></p>
+                <h2>Popular Movies By WorldWide</h2>
+		
+			</div>
+            
+			
+	    	<div  class="slick-multiItemSlider">
+	    		<div class="movie-item" >
+	    			<div class="mv-img">
+	    				<a href="#"><img src="movieImg/pop-img/pop1.jpg" alt="" ></a>
+	    			</div>
+	    			<div class="title-in">
+	    				<div class="cate">
+	    					<span class="blue"><a href="#">Sci-fi</a></span>
+	    				</div>
+	    				<h6><a href="#">Avenger 4</a></h6>
+	    				<p><span>8.4</span> /10</p>
+	    			</div>
+	    		</div>
+				<div class="movie-item">
+	    			<div class="mv-img">
+	    				<a href="#"><img src="movieImg/pop-img/pop2.jpg" alt="" ></a>
+	    			</div>
+	    			<div class="title-in">
+	    				<div class="cate">
+	    					<span class="yell"><a href="#">action</a></span>
+	    				</div>
+	    				<h6><a href="#">Clash Of Titan</a></h6>
+	    				<p><span>6.4</span> /10</p>
+	    			</div>
+	    		</div>
+	    		<div class="movie-item">
+	    			<div class="mv-img">
+	    				<a href="#"><img src="movieImg/pop-img/pop3.jfif" alt="" ></a>
+	    			</div>
+	    			<div class="title-in">
+	    				<div class="cate">
+	    					<span class="green"><a href="#">Sci-fi</a></span>
+	    				</div>
+	    				<h6><a href="#">Terminator</a></h6>
+	    				<p><span>8.4</span> /10</p>
+	    			</div>
+	    		</div>
+	    		<div class="movie-item">
+	    			<div class="mv-img">
+	    				<a href="#"><img src="movieImg/pop-img/pop6.jpg" alt="" ></a>
+	    			</div>
+	    			<div class="title-in">
+	    				<div class="cate">
+	    					<span class="blue"><a href="#">Sci-fi</a></span> <span class="orange"><a href="#">advanture</a></span>
+	    				</div>
+	    				<h6><a href="#">2014</a></h6>
+	    				<p><span>9.4</span> /10</p>
+	    			</div>
+	    		</div>
+	    		<div class="movie-item">
+	    			<div class="mv-img">
+	    				<a href="#"><img src="movieImg/pop-img/pop7.jpg "alt=""></a>
+	    			</div>
+	    			<div class="title-in">
+	    				<div class="cate">
+	    					<span class="blue"><a href="#">Sci-fi</a></span>
+	    				</div>
+	    				<h6><a href="#">Interstellar</a></h6>
+	    				<p><span>7.4</span> /10</p>
+	    			</div>
+	    		</div>
+				<div class="movie-item">
+	    			<div class="mv-img">
+	    				<a href="#"><img src="movieImg/pop-img/pop8.jpg" alt="" ></a>
+	    			</div>
+	    			<div class="title-in">
+	    				<div class="cate">
+	    					<span class="yell"><a href="#">action</a></span>
+	    				</div>
+	    				<h6><a href="#">Dark Knight</a></h6>
+	    				<p><span>8.0</span> /10</p>
+	    			</div>
+	    		</div>
+	    		<div class="movie-item">
+	    			<div class="mv-img">
+	    				<img src="movieImg/pop-img/pop9.jfif" alt="">
+	    			</div>
+	    			<div class="title-in">
+	    				<div class="cate">
+	    					<span class="green"><a href="#">Horror</a></span>
+	    				</div>
+	    				<h6><a href="#">Death Stranding</a></h6>
+	    				<p><span>8.1</span> /10</p>
+	    			</div>
+	    		</div>
+	    		<div class="movie-item">
+	    			<div class="mv-img">
+	    				<img src="movieImg/pop-img/pop10.jpg.crdownload" alt="">
+	    			</div>
+	    			<div class="title-in">
+	    				<div class="cate">
+	    					<span class="blue"><a href="#">Sci-fi</a></span> <span class="orange"><a href="#">advanture</a></span>
+	    				</div>
+	    				<h6><a href="#">Iron Man 3</a></h6>
+	    				<p></i><span>7.3</span> /10</p>
+	    			</div>
+	    		</div>
+	    		<div class="movie-item">
+	    			<div class="mv-img">
+	    				<img src="movieImg/nile.jfif" alt="">
+	    			</div>
+	    			<div class="title-in">
+	    				<div class="cate">
+	    					<span class="green"><a href="#">advanture</a></span>
+	    				</div>
+	    				<h6><a href="#">Death On The Nile</a></h6>
+	    				<p></i><span>7.1</span> /10</p>
+	    			</div>
+	    		</div>
+	    	</div>
+	    
+	</div>
+</div>
+
+
+
+	<!-- categories -->
+	<section class="section section--pb0" style="margin-bottom: 100px;margin-top: 50px;">
+		<div class="section-title-5">
+			<div class="section-content">
+			<h3>All genre</h3>
+		</div>
+			<h2> All genre Movies available</h2>
+		</div>
+		<div class="container-movie">
+			<div class="row-movie row--grid">
+				
+				<div class="col-12 col-sm-6 col-lg-4 col-xl-3" >
+					<a href="movies-page.html" class="category">
+						<div class="category__cover">
+							<img src="movieImg/gen1.jfif" alt="">
+						</div>
+						<h3 class="category__title">Action</h3>
+						<span class="category__value">322</span>
+					</a>
+				</div>
+
+				<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+					<a href="movies-page.html" class="category">
+						<div class="category__cover">
+							<img src="movieImg/gen2.jpg" alt="">
+						</div>
+						<h3 class="category__title">Comedy</h3>
+						<span class="category__value">174</span>
+					</a>
+				</div>
+
+				<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+					<a href="movies-page.html" class="category">
+						<div class="category__cover">
+							<img src="movieImg/gen3.jfif" alt="">
+						</div>
+						<h3 class="category__title">Adventure</h3>
+						<span class="category__value">509</span>
+					</a>
+				</div>
+
+				<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+					<a href="movies-page.html" class="category">
+						<div class="category__cover">
+							<img src="img/category/4.jpg" alt="">
+						</div>
+						<h3 class="category__title">History</h3>
+						<span class="category__value">1 228</span>
+					</a>
+				</div>
+
+				<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+					<a href="movies-page.html" class="category">
+						<div class="category__cover">
+							<img src="img/category/5.jpg" alt="">
+						</div>
+						<h3 class="category__title">Horror</h3>
+						<span class="category__value">1 025</span>
+					</a>
+				</div>
+
+				<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+					<a href="movies-page.html" class="category">
+						<div class="category__cover">
+							<img src="img/category/6.jpg" alt="">
+						</div>
+						<h3 class="category__title">Science Fiction</h3>
+						<span class="category__value">819</span>
+					</a>
+				</div>
+
+				<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+					<a href="movies-page.html" class="category">
+						<div class="category__cover">
+							<img src="movieImg/gen4.jfif" alt="">
+						</div>
+						<h3 class="category__title">Crime</h3>
+						<span class="category__value">3 601</span>
+					</a>
+				</div>
+
+				<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+					<a href="movies-page.html" class="category">
+						<div class="category__cover">
+							<img src="movieImg/gen5.jpg" alt="">
+						</div>
+						<h3 class="category__title">Drama</h3>
+						<span class="category__value">745</span>
+					</a>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+					<a href="movies-page.html" class="category">
+						<div class="category__cover">
+							<img src="movieImg/gen6.jfif" alt="">
+						</div>
+						<h3 class="category__title">Fantasy</h3>
+						<span class="category__value">745</span>
+					</a>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+					<a href="movies-page.html" class="category">
+						<div class="category__cover">
+							<img src="movieImg/gen7.jfif" alt="">
+						</div>
+						<h3 class="category__title">Thriller</h3>
+						<span class="category__value">3 001</span>
+					</a>
+				</div>
+
+				<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+					<a href="movies-page.html" class="category">
+						<div class="category__cover">
+							<img src="movieImg/gen8.jfif" alt="">
+						</div>
+						<h3 class="category__title">Anime</h3>
+						<span class="category__value">705</span>
+					</a>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+					<a href="movies-page.html" class="category">
+						<div class="category__cover">
+							<img src="movieImg/gen9.jpg" alt="">
+						</div>
+						<h3 class="category__title">Westren</h3>
+						<span class="category__value">845</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section> 
+	<!-- endcategories -->
+
+
+ <!-- Start Banner Area  -->
+ <div class="slider-area bg-black" style="margin-bottom: 50px">
+	<div class="container-six p-0">
+		<div class="hero-slider-four dot-style-1 nav-style-1" >
+			<div class="single-hero-slider-wrap single-animation-wrap slider-height-hm4 bg-image-hm4 slider-bg-color-black d-flex align-items-center hero-overly slider-bg-position-2 bg-black"
+				style="background-image:url(movieImg/banner5.jfif);">
+				<div class="slider-content-hm4 slider-animated">
+					<h1 class="title4 animated">Black Summer</h1>
+				
+					<div class="season-content combo-pack-price">
+						<p class="new-price animated" id="season-content-text">4 Season</p><span class="old-price animated" id="season-content-dot">.</span><p class="new-price animated" id="season-content-text">40 Episode</p><span class="old-price animated" id="season-content-dot">.</span><p class="new-price animated" id="season-content-text">2019 to 2022</p><span class="old-price animated" id="season-content-dot">.</span>
+						<a class="new-price animated" id="season-content-btn">Horror</a>
+					</div>
+					<div class="combo-pack-price" >
+						<span class="new-price animated" id="season-paragrph">Black Summer created by Karl Schaefer and John Hyams. It is a spinoff of Z Nation. The first season, consisting of eight episodes</span>
+				
+					</div>
+					<div class="slider-button">
+						<a href="movie-details.html" class="default-btn-six btn-style-hm4 animated">Watch Now</a>
+					</div>
+				</div>
+			</div>
+			<div class="single-hero-slider-wrap single-animation-wrap slider-height-hm4 bg-image-hm4 slider-bg-color-black d-flex align-items-center hero-overly slider-bg-position-2 bg-black"
+				style="background-image:url(movieImg/banner6.jfif);">
+				<div class="slider-content-hm4 slider-animated">
+					<h1 class="title4 animated">Ms Marvel</h1>
+				
+					<div class="season-content combo-pack-price">
+						<p class="new-price animated" id="season-content-text">1 Season</p><span class="old-price animated" id="season-content-dot">.</span><p class="new-price animated" id="season-content-text">7 Episode</p><span class="old-price animated" id="season-content-dot">.</span><p class="new-price animated" id="season-content-text">2021 to 2022</p><span class="old-price animated" id="season-content-dot">.</span>
+						<a class="new-price animated" id="season-content-btn">Action</a>
+					</div>
+					<div class="combo-pack-price" >
+						<span class="new-price animated" id="season-paragrph">Ms. Marvel created by Bisha K. Ali, based on the Marvel Comics featuring the character Kamala Khan / Ms. Marvel.</span>
+				
+					</div>
+					<div class="slider-button">
+						<a href="movie-details.html" class="default-btn-six btn-style-hm4 animated">Watch Now</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- End Banner Area -->
+  
+
+
+
+   
+		
+		<!-- Start Footer Area -->
+		<footer class="footer-top-area pt-100 ">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<div class="single-widget">
+                            <div class="footer-title">
+                                <h1 class="title">KNIGHTFLIX</h1>
+                            </div>
+							<div class="newsletter-wrap">
+								<h3>Contact Via Email</h3>
+								<form class="newsletter-form" data-toggle="validator">
+									<input type="email" class="form-control" placeholder="Enter email address" name="EMAIL" required autocomplete="off">
+		
+									<button class="send-btn" type="submit">
+										<i class="bx bx-right-arrow-alt"></i>
+									</button>
+		
+									<div id="validator-newsletter-2" class="form-result"></div>
+								</form>
+							</div>
+
+						
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="single-widget">
+							<h3>Contact Us</h3>
+
+							<ul class="address">
+								<li>
+                                    <i class='bx bx-map-pin' ></i>
+                                    <span>Sector 5-D, Surjani Town<br> Karachi, Pakistan</span>
+								</li>
+                                <li>
+                                
+                                    <i class='bx bx-map-pin'></i>
+                                    <span>Abdullah Banglows, Sector 6,<br> Karachi, Pakistan</span>
+                                    
+								</li>
+
+								<li>
+                                    <i class='bx bxs-envelope' ></i>
+                                    <a href="mailto:shahryaraptech@gmail.com" target="_self">shahryaraptech@gmail.com</a>
+                                    <a href="mailto:shahryaraptech@gmail.com" target="_self">amankhan03142@gmail.com</a>
+
+									
+								</li>
+
+								<li>
+                                    <i class='bx bxs-phone' ></i>
+                                    <a href="tel:+92-318-208-1761">+92 318 208 1761</a>
+                                    <a href="tel:+92-314-246-8915">+92 314 246 8915</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="col-lg-3 col-md-6">
+						<div class="single-widget">
+							<h3>Additional Links</h3>
+
+							<ul class="additional-link">
+								<li>
+									<a href="#">About</a>
+								</li>
+								<li>
+									<a href="#">Team</a>
+								</li>
+								<li>
+									<a href="#">Help (FAQ)</a>
+								</li>
+								<li>
+									<a href="#">Contacts</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="single-widget">
+							<h3>Follow Links</h3>
+
+                            <ul class="social-wrap">
+								<li>
+									<a href="https://twitter.com/i/flow/login" target="_blank">
+										<i class="bx bxl-twitter"></i>
+									</a>
+								</li>
+
+								<li>
+									<a href="https://www.instagram.com/" target="_blank">
+										<i class="bx bxl-instagram"></i>
+									</a>
+								</li>
+
+								<li>
+									<a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank">
+										<i class="bx bxl-facebook"></i>
+									</a>
+								</li>
+
+								<li>
+									<a href="https://www.linkedin.com/login" target="_blank">
+                                        <i class='bx bxl-linkedin' ></i>
+    									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- End Footer Area -->
+
+		<!-- Start Footer Bottom Area -->
+		<footer class="footer-bottom-area">
+			<div class="container">
+				<div class="copyright-wrap">
+					<p>Copyright @2022 KnightFlix. Designed By <a>Aman & Sherry</a></p>
+				</div>
+			</div>
+		</footer>
+		<!-- End Footer Bottom Area -->
+    <!-- Start Go Top Area -->
+    <div class="go-top">
+        <i class='bx bx-chevrons-up'></i>
+        <i class='bx bx-chevrons-up'></i>
+    </div>
+    <!-- End Go Top Area -->
+
+
+	<script src="js/demoData.js"></script>
+    <script>
+        var newProduct = "";
+    
+        for (var i in products) 
+        {
+        
+   
+            newProduct += "<div class='movie_card ' >" +
+                    "<div class='info_section'>" + 
+                    " <img class='locandina' src=" + products[i].picture+ " /> " + 
+                    "<div class='video-button'>"+
+                        "<a class='video-btn'>"+
+                            "<i class='bx bx-play'></i>"+
+                            "</a>"+
+                            " </div>"+
+                    "<div class='movie_header'>" +
+                    "<h1>" + products[i].MName + "</h1>" + 
+                    "<h4>Release Date " + products[i].ReleaseD + "</h4>" + 
+                    "<span class='minutes'>" + products[i].RunTime + "min</span>" + 
+                    "<p class='type'>" + products[i].Genre + "</p>" + 
+                    "</div>" + 
+                    "<div class='movie_desc'>" + 
+                    "    <p class='desc-text'> " + products[i].ShortDesc + " " + 
+                    " </p>" + 
+                    "</div>" + 
+                        "</div>"+
+                        "<div class='blur_back'><img src=" + products[i].picture + " ></div>"+
+    
+                        "</div>"+
+                        "</div>";
+        }
+        document.getElementById("product-list").innerHTML += newProduct;
+    </script>
+    <script src="js/Search.js"></script>
+    <!-- scripts start -->
+    <script src="js/plugins.js">
+    </script>
+    <script src="js/intro.js"></script>
+    </script>
+    <script src="js/home.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Meanmenu JS -->
+    <script src="js/jquery.meanmenu.js"></script>
+	    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/plugins1.js"></script>
+    <script src="js/main2.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/FavIcon.js"></script>
+    <!-- Jquery-3.5.1.Slim.Min.JS -->
+	<script src="cartAssets/js/jquery-3.5.1.slim.min.js"></script>
+    <!-- Popper JS -->
+    <!-- Bootstrap JS -->
+    <script src="cartAssets\js\bootstrap.min.js"></script>
+    <!-- Meanmenu JS -->
+    <script src="cartAssets/js/jquery.meanmenu.js"></script>
+    <!-- Wow JS -->
+    <!-- Owl Carousel JS -->
+    <script src="cartAssets/js/owl.carousel.js"></script>
+    <!-- Carousel Thumbs JS -->
+    <script src="cartAssets/js/carousel-thumbs.js"></script>
+    <!-- Owl Magnific JS -->
+    <!-- Nice Select JS -->
+    <script src="cartAssets/js/jquery.nice-select.min.js"></script>
+    <!-- Custom JS -->
+    <script src="cartAssets/js/custom.js"></script>
+    <!-- Custom JS -->
+    <script src="cartAssets/js/custom.js"></script>
+    <script src="movieJs/plugins.js"></script>
+    <script src="movieJs/plugins2.js"></script>
+    <script src="movieJs/custom.js"></script>
+ 
+
+
+
+    <!-- scripts end -->
+</body>
+
+
+</html>
